@@ -1,0 +1,148 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  padding: 30px;
+}
+
+* body .clock {
+  position: relative;
+  background-color: #f5f5dc;
+  width: 170px;
+  height: 170px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 4px solid #091921;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.55), inset 0 0 5px 0 rgba(0, 0, 0, 0.55), 0 0 5px 0 rgba(0, 0, 0, 0.55), inset 0 0 5px 0 rgba(0, 0, 0, 0.55);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.55), inset 0 0 5px 0 rgba(0, 0, 0, 0.55), 0 0 5px 0 rgba(0, 0, 0, 0.55), inset 0 0 5px 0 rgba(0, 0, 0, 0.55);
+}
+
+* body .clock::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #000000;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9999;
+}
+
+* body .clock .item::before {
+  content: '';
+  width: 8px;
+  height: 3px;
+  background-color: #000000;
+}
+
+* body .clock .item-hour::before {
+  content: attr(data-count);
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+* body .clock .item-count {
+  width: 15px;
+  height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* body .clock .item-count:nth-child(1), * body .clock .item-count:nth-child(7) {
+  -webkit-transform: rotateZ(-60deg);
+          transform: rotateZ(-60deg);
+}
+
+* body .clock .item-count:nth-child(2), * body .clock .item-count:nth-child(8) {
+  -webkit-transform: rotateZ(-35deg);
+          transform: rotateZ(-35deg);
+}
+
+* body .clock .item-count:nth-child(4), * body .clock .item-count:nth-child(10) {
+  -webkit-transform: rotateZ(35deg);
+          transform: rotateZ(35deg);
+}
+
+* body .clock .item-count:nth-child(5), * body .clock .item-count:nth-child(11) {
+  -webkit-transform: rotateZ(60deg);
+          transform: rotateZ(60deg);
+}
+
+* body .clock .hour {
+  width: 80px;
+  height: 80px;
+}
+
+* body .clock .hour::before {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 40px;
+  background-color: #FF105E;
+  z-index: 10;
+  border-radius: 3px 3px 0 0;
+}
+
+* body .clock .min {
+  width: 100px;
+  height: 100px;
+}
+
+* body .clock .min::before {
+  content: '';
+  position: absolute;
+  width: 3px;
+  height: 50px;
+  background-color: #dd8d58;
+  z-index: 11;
+  border-radius: 3px 3px 0 0;
+}
+
+* body .clock .sec {
+  width: 120px;
+  height: 120px;
+}
+
+* body .clock .sec::before {
+  content: '';
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background-color: #dbdd58;
+  z-index: 12;
+  border-radius: 3px 3px 0 0;
+}
+
+* body .clock .hour,
+* body .clock .min,
+* body .clock .sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=style.css.map */
