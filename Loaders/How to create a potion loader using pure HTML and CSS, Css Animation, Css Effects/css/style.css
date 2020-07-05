@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .parent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #18212A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .parent .loader {
+  width: 100px;
+}
+
+* .parent .loader .loader-title {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.7;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+
+* .parent .loader .loader-items {
+  width: 100%;
+  height: 185px;
+  position: relative;
+}
+
+* .parent .loader .loader-items .cap {
+  width: 50px;
+  height: 30px;
+  background-color: #B9661C;
+  position: absolute;
+  top: 2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+* .parent .loader .loader-items .cap::after {
+  content: "";
+  height: 100%;
+  width: 50%;
+  background-color: #9A501D;
+  left: 50%;
+  position: absolute;
+}
+
+* .parent .loader .loader-items .glass {
+  width: 50px;
+  height: 150px;
+  background-color: #B5F0E8;
+  opacity: .7;
+  position: absolute;
+  top: 32px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+}
+
+* .parent .loader .loader-items .glass .glass-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+* .parent .loader .loader-items .glass .glass-content .fill {
+  position: absolute;
+  bottom: 5px;
+  background-color: #DA0000;
+  width: calc(100% - 8px);
+  left: 4px;
+  height: calc(100% - 10px);
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  overflow: hidden;
+  -webkit-animation: loader 1500ms linear infinite;
+          animation: loader 1500ms linear infinite;
+}
+
+* .parent .loader .loader-items .glass .glass-content .fill .fill-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+* .parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble {
+  position: absolute;
+  width: 40%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: #BF0303;
+  top: calc(calc(var(--i) * 19%) + 5px);
+  left: 2px;
+}
+
+* .parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble:nth-child(2), * .parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble:nth-child(4) {
+  left: calc(100% - 10px);
+}
+
+@-webkit-keyframes loader {
+  to {
+    height: calc(100% - 10px);
+  }
+  from {
+    height: 5%;
+  }
+}
+
+@keyframes loader {
+  to {
+    height: calc(100% - 10px);
+  }
+  from {
+    height: 5%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
