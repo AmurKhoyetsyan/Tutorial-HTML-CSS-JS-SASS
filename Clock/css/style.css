@@ -57,6 +57,7 @@
 * body .clock .item-count {
   width: 15px;
   height: 15px;
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
