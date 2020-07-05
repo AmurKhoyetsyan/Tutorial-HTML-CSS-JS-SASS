@@ -2,4 +2,4 @@
 
 <img src="../../img/loader_7.png" alt="loader" />
 
-[Video Lesson](https://www.youtube.com/watch?v=gnf437BFQpk)
+[Video Lesson](https://www.youtube.com/watch?v=dMBkM5MlCyc)
