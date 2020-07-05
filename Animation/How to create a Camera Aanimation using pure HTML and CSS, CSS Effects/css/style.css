@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .parent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #282E3A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .parent .animation {
+  width: 260px;
+}
+
+* .parent .animation .animation-items {
+  width: 100%;
+  height: 260px;
+  position: relative;
+}
+
+* .parent .animation .animation-items .camera {
+  width: 80%;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: animationCamera 2000ms linear infinite;
+          animation: animationCamera 2000ms linear infinite;
+}
+
+* .parent .animation .animation-items .camera .camera-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+* .parent .animation .animation-items .camera .camera-content .camera-header {
+  width: 100%;
+  height: 50%;
+  background-color: #FFFFFF;
+  border-top-left-radius: 15% 30%;
+  border-top-right-radius: 15% 30%;
+}
+
+* .parent .animation .animation-items .camera .camera-content .camera-header::before {
+  content: "";
+  width: 10%;
+  height: 10%;
+  background-color: #E67E22;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border-radius: 50%;
+  -webkit-animation: animationGlass 2000ms linear infinite;
+          animation: animationGlass 2000ms linear infinite;
+}
+
+* .parent .animation .animation-items .camera .camera-content .camera-header::after {
+  content: "";
+  width: 25%;
+  height: 10%;
+  background-color: #68B5F1;
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  border-radius: 25%/50%;
+  -webkit-animation: animationGlass 2000ms linear infinite;
+          animation: animationGlass 2000ms linear infinite;
+}
+
+* .parent .animation .animation-items .camera .camera-content .camera-footer {
+  width: 100%;
+  height: 50%;
+  background-color: #E67E22;
+  border-top: 15px solid #DD660E;
+  border-bottom-left-radius: 15% 30%;
+  border-bottom-right-radius: 15% 30%;
+  -webkit-box-shadow: inset 0 -20px 0 0 #DB640E;
+          box-shadow: inset 0 -20px 0 0 #DB640E;
+}
+
+* .parent .animation .animation-items .camera .camera-content .camera-footer::before {
+  content: "";
+  position: absolute;
+  background-color: #282E3A;
+  width: 50%;
+  height: 10%;
+  left: 25%;
+  top: 60%;
+  -webkit-animation: animationGlass 2000ms linear infinite;
+          animation: animationGlass 2000ms linear infinite;
+}
+
+* .parent .animation .animation-items .camera .camera-content .camera-footer::after {
+  content: "";
+  position: absolute;
+  background-color: #FFFFFF;
+  width: 40%;
+  left: 30%;
+  top: 60%;
+  -webkit-box-shadow: 0 10px 0 0 #DB640E, inset 0 10px 0 0 #C3D1DD;
+          box-shadow: 0 10px 0 0 #DB640E, inset 0 10px 0 0 #C3D1DD;
+  -webkit-animation: animationPaper 2000ms linear infinite;
+          animation: animationPaper 2000ms linear infinite;
+}
+
+* .parent .animation .animation-items .camera .camera-content .glass {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  border-radius: 50%/50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #243E6E;
+  padding: 5px;
+  -webkit-box-shadow: 0 0 0 18px #3E5489, 0 0 0 23px #1C3666, 0 0 0 30px #ECF0F1, 0 7px 0 30px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 0 18px #3E5489, 0 0 0 23px #1C3666, 0 0 0 30px #ECF0F1, 0 7px 0 30px rgba(0, 0, 0, 0.2);
+  -webkit-animation: animationGlass 2000ms linear infinite;
+          animation: animationGlass 2000ms linear infinite;
+}
+
+* .parent .animation .animation-items .camera .camera-content .glass::before {
+  content: "";
+  width: 90%;
+  height: 90%;
+  position: absolute;
+  top: -60%;
+  left: -60%;
+  border-radius: 50%/50%;
+  background-color: #A3BFD5;
+}
+
+* .parent .animation .animation-items .camera .camera-content .glass::after {
+  content: "";
+  width: 70%;
+  height: 70%;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  border-radius: 50%/50%;
+  background-color: #6078A3;
+}
+
+@-webkit-keyframes animationGlass {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+}
+
+@keyframes animationGlass {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  20% {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+}
+
+@-webkit-keyframes animationPaper {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  25% {
+    opacity: 0;
+    height: 0;
+  }
+  30% {
+    opacity: 1;
+    height: 22%;
+  }
+  95% {
+    opacity: 1;
+    height: 22%;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@keyframes animationPaper {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  25% {
+    opacity: 0;
+    height: 0;
+  }
+  30% {
+    opacity: 1;
+    height: 22%;
+  }
+  95% {
+    opacity: 1;
+    height: 22%;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+
+@-webkit-keyframes animationCamera {
+  from {
+    -webkit-transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+            transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+  }
+  15% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2) rotate(-75deg);
+            transform: translate(-50%, -50%) scale(1.2) rotate(-75deg);
+  }
+  20% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
+            transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+  90% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
+            transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+            transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+  }
+}
+
+@keyframes animationCamera {
+  from {
+    -webkit-transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+            transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+  }
+  15% {
+    -webkit-transform: translate(-50%, -50%) scale(1.2) rotate(-75deg);
+            transform: translate(-50%, -50%) scale(1.2) rotate(-75deg);
+  }
+  20% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
+            transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+  90% {
+    -webkit-transform: translate(-50%, -50%) scale(1) rotate(0);
+            transform: translate(-50%, -50%) scale(1) rotate(0);
+  }
+  to {
+    -webkit-transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+            transform: translate(-50%, -50%) scale(0.2) rotate(75deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
