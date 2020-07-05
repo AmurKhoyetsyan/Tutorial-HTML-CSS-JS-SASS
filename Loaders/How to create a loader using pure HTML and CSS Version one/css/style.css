@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .parent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #e06363;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .parent .loader {
+  width: 150px;
+  height: 40px;
+}
+
+* .parent .loader .loader-title {
+  padding-top: 10px;
+  width: 100%;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.7;
+  text-align: center;
+}
+
+* .parent .loader .loader-items {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .parent .loader .loader-items .buble {
+  width: 30px;
+  height: 30px;
+  background-color: #FFFFFF;
+  border-radius: 100%;
+  -webkit-animation: bubble1 1200ms ease-in-out infinite;
+          animation: bubble1 1200ms ease-in-out infinite;
+  -webkit-animation-delay: calc(var(--i) * 350ms);
+          animation-delay: calc(var(--i) * 350ms);
+}
+
+@-webkit-keyframes bubble1 {
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(0.3, 0.3);
+            transform: scale(0.3, 0.3);
+  }
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes bubble1 {
+  to {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  50% {
+    -webkit-transform: scale(0.3, 0.3);
+            transform: scale(0.3, 0.3);
+  }
+  from {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+/*# sourceMappingURL=style.css.map */

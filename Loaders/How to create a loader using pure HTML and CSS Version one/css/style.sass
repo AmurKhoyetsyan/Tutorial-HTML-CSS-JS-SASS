@@ -1,0 +1,44 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+    .parent
+        width: 100vw
+        height: 100vh
+        background-color: #e06363
+        display: flex
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        .loader
+            width: 150px
+            height: 40px
+            .loader-title
+                padding-top: 10px
+                width: 100%
+                color: #FFFFFF
+                font-weight: 700
+                font-size: 20px
+                line-height: 1.7
+                text-align: center
+            .loader-items
+                width: 100%
+                display: flex
+                flex-wrap: nowrap
+                justify-content: space-between
+                align-items: center
+                .buble
+                    width: 30px
+                    height: 30px
+                    background-color: #FFFFFF
+                    border-radius: 100%
+                    animation: bubble1 1200ms ease-in-out infinite
+                    animation-delay: calc(var(--i) * 350ms)
+
+@keyframes bubble1
+    to
+        transform: scale(1,1)
+    50%
+        transform: scale(0.3,0.3)
+    from
+        transform: scale(1,1)
