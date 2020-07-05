@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* .parent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #202C39;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+* .parent .loader {
+  width: 100px;
+}
+
+* .parent .loader .loader-title {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.7;
+  color: #FFFFFF;
+}
+
+* .parent .loader .loader-items {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+}
+
+* .parent .loader .loader-items .circle {
+  position: absolute;
+  border: 1px solid #FFFFFF;
+  width: calc(var(--i) * 10px);
+  height: calc(var(--i) * 10px);
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  -webkit-transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+          transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+  -webkit-animation: loader 1200ms linear infinite;
+          animation: loader 1200ms linear infinite;
+  -webkit-animation-delay: calc(var(--i) * 100ms);
+          animation-delay: calc(var(--i) * 100ms);
+}
+
+* .parent .loader .loader-items .cub {
+  position: absolute;
+  border: 1px solid #FFFFFF;
+  width: calc(var(--i) * 10px);
+  height: calc(var(--i) * 10px);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+          transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+  -webkit-animation: loader 1200ms linear infinite;
+          animation: loader 1200ms linear infinite;
+  -webkit-animation-delay: calc(var(--i) * 100ms);
+          animation-delay: calc(var(--i) * 100ms);
+}
+
+@-webkit-keyframes loader {
+  from {
+    -webkit-transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+  }
+  33.3% {
+    -webkit-transform: translate3d(-50%, -90%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -90%, -70px) rotateX(65deg);
+  }
+  66.6% {
+    -webkit-transform: translate3d(-50%, -20%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -20%, -70px) rotateX(65deg);
+  }
+  to {
+    -webkit-transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+  }
+}
+
+@keyframes loader {
+  from {
+    -webkit-transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+  }
+  33.3% {
+    -webkit-transform: translate3d(-50%, -90%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -90%, -70px) rotateX(65deg);
+  }
+  66.6% {
+    -webkit-transform: translate3d(-50%, -20%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -20%, -70px) rotateX(65deg);
+  }
+  to {
+    -webkit-transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+            transform: translate3d(-50%, -50%, -70px) rotateX(65deg);
+  }
+}
+/*# sourceMappingURL=style.css.map */
