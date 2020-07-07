@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+.parent {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.parent .content {
+    width: 475px;
+    height: 620px;
+    background-image: url("../img/9b1c2672d8f5cff10babd7076ce4b093.jpg");
+    background-size: cover;
+    font-size: 10px;
+    line-break: anywhere;
+    overflow: hidden;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(0,0,0,0);
+    filter: grayscale(1);
+}
