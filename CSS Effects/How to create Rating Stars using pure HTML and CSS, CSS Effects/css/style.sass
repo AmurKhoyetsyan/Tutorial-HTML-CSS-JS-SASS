@@ -1,0 +1,40 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.parent
+    width: 100vw
+    height: 100vh
+    background-color: #FFFFFF
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    .content
+        width: 500px
+        .content-body
+            font-size: 14px
+            width: 100%
+            padding: .5rem
+            border-radius: .5rem
+            background-color: #FFEEEE
+        .content-footer
+            width: 100%
+            padding: .5rem
+            border-radius: .5rem
+            background-color: #004E4E
+            display: flex
+            flex-wrap: nowrap
+            flex-direction: row-reverse
+            justify-content: start
+            .star
+                width: 20px
+                height: 20px
+                cursor: pointer
+                background-color: #BDBDBD
+                clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%)
+                &:hover,
+                &:hover ~ .star
+                    background-color: #FFFF00
