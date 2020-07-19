@@ -9,7 +9,7 @@
           user-select: none;
 }
 
-* .parent {
+.parent {
   width: 100vw;
   height: 100vh;
   background-color: #000000;
@@ -30,7 +30,7 @@
           align-items: center;
 }
 
-* .parent .content {
+.parent .content {
   width: 475px;
   height: 620px;
   background-image: url("../img/9b1c2672d8f5cff10babd7076ce4b093.jpg");
