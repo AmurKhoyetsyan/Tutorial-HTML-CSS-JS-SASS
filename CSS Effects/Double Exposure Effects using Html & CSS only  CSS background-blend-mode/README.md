@@ -2,4 +2,4 @@
 
 <img src="../../img/effect_3.png" alt="css effects" />
 
-[Video Lesson]()
+[Video Lesson](https://www.youtube.com/watch?v=hzPBNZYP8to)
