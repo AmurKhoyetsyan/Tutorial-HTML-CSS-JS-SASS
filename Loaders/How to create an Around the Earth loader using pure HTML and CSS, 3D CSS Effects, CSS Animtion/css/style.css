@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-* .parent {
+.parent {
   width: 100vw;
   height: 100vh;
   background-color: #676D89;
@@ -26,11 +26,11 @@
           align-items: center;
 }
 
-* .parent .loader {
+.parent .loader {
   width: 120px;
 }
 
-* .parent .loader .loader-title {
+.parent .loader .loader-title {
   width: 100%;
   text-align: center;
   font-size: 20px;
@@ -39,7 +39,7 @@
   color: #FFFFFF;
 }
 
-* .parent .loader .loader-items {
+.parent .loader .loader-items {
   width: 100%;
   height: 120px;
   position: relative;
@@ -49,7 +49,7 @@
           perspective: 120px;
 }
 
-* .parent .loader .loader-items .moon {
+.parent .loader .loader-items .moon {
   position: absolute;
   background-color: #59DBBE;
   border-radius: 50%;
@@ -63,7 +63,7 @@
           box-shadow: inset 0 16px 4px -4px rgba(0, 0, 0, 0.15);
 }
 
-* .parent .loader .loader-items .moon .hole {
+.parent .loader .loader-items .moon .hole {
   position: absolute;
   background-color: #4DBEA5;
   -webkit-transform: rotate(-90deg);
@@ -73,56 +73,56 @@
           box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.5), inset 16px 0 2px -12px rgba(0, 0, 0, 0.15);
 }
 
-* .parent .loader .loader-items .moon .hole:nth-child(1) {
+.parent .loader .loader-items .moon .hole:nth-child(1) {
   left: 25px;
   top: 10px;
   width: 12px;
   height: 12px;
 }
 
-* .parent .loader .loader-items .moon .hole:nth-child(2) {
+.parent .loader .loader-items .moon .hole:nth-child(2) {
   left: 55px;
   top: 25px;
   width: 12px;
   height: 12px;
 }
 
-* .parent .loader .loader-items .moon .hole:nth-child(3) {
+.parent .loader .loader-items .moon .hole:nth-child(3) {
   left: 15px;
   top: 50px;
   width: 14px;
   height: 14px;
 }
 
-* .parent .loader .loader-items .moon .hole:nth-child(4) {
+.parent .loader .loader-items .moon .hole:nth-child(4) {
   left: 53px;
   top: 53px;
   width: 8px;
   height: 8px;
 }
 
-* .parent .loader .loader-items .moon .hole:nth-child(5) {
+.parent .loader .loader-items .moon .hole:nth-child(5) {
   left: 57px;
   top: 65px;
   width: 2px;
   height: 2px;
 }
 
-* .parent .loader .loader-items .moon .hole:nth-child(6) {
+.parent .loader .loader-items .moon .hole:nth-child(6) {
   left: 25px;
   top: 67px;
   width: 4px;
   height: 4px;
 }
 
-* .parent .loader .loader-items .moon .hole:nth-child(7) {
+.parent .loader .loader-items .moon .hole:nth-child(7) {
   left: 15px;
   top: 40px;
   width: 3px;
   height: 3px;
 }
 
-* .parent .loader .loader-items .shadow {
+.parent .loader .loader-items .shadow {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -134,7 +134,7 @@
           transform: translateX(-50%) rotateX(105deg);
 }
 
-* .parent .loader .loader-items .orbit {
+.parent .loader .loader-items .orbit {
   width: 100px;
   height: 100px;
   border: 3px solid #7C819B;
@@ -146,7 +146,7 @@
           transform: translate3d(-50%, -50%, 0) rotate3d(1, 1, 1, 195deg);
 }
 
-* .parent .loader .loader-items > .rocket {
+.parent .loader .loader-items > .rocket {
   width: 20px;
   height: 38px;
   position: absolute;
@@ -155,13 +155,13 @@
   z-index: -1;
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content {
+.parent .loader .loader-items > .rocket .rocket-content {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .head-left {
+.parent .loader .loader-items > .rocket .rocket-content .head-left {
   position: absolute;
   background-color: #FFFFFF;
   left: 5px;
@@ -170,7 +170,7 @@
   border-top-left-radius: 100%;
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .body-left {
+.parent .loader .loader-items > .rocket .rocket-content .body-left {
   position: absolute;
   background-color: #FFFFFF;
   left: 5px;
@@ -180,7 +180,7 @@
   border-bottom-left-radius: 70%;
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .footer-left {
+.parent .loader .loader-items > .rocket .rocket-content .footer-left {
   position: absolute;
   left: 5px;
   top: 25px;
@@ -191,7 +191,7 @@
           transform: rotate(-45deg);
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .footer-left::before {
+.parent .loader .loader-items > .rocket .rocket-content .footer-left::before {
   content: "";
   position: absolute;
   left: -10px;
@@ -204,7 +204,7 @@
           transform: rotate(25deg);
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .head-right {
+.parent .loader .loader-items > .rocket .rocket-content .head-right {
   position: absolute;
   background-color: #D2C3C3;
   left: 10px;
@@ -213,7 +213,7 @@
   border-top-right-radius: 100%;
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .body-right {
+.parent .loader .loader-items > .rocket .rocket-content .body-right {
   position: absolute;
   background-color: #D2C3C3;
   left: 10px;
@@ -223,7 +223,7 @@
   border-bottom-right-radius: 70%;
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .footer-right {
+.parent .loader .loader-items > .rocket .rocket-content .footer-right {
   position: absolute;
   left: 5px;
   top: 25px;
@@ -234,7 +234,7 @@
           transform: rotate(135deg);
 }
 
-* .parent .loader .loader-items > .rocket .rocket-content .footer-right::before {
+.parent .loader .loader-items > .rocket .rocket-content .footer-right::before {
   content: "";
   position: absolute;
   left: -8px;
@@ -247,7 +247,7 @@
           transform: rotate(-25deg);
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent {
+.parent .loader .loader-items > .rocket-shadow-parent {
   position: absolute;
   border-radius: 50%;
   width: 80px;
@@ -259,7 +259,7 @@
   overflow: hidden;
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket {
   width: 20px;
   height: 38px;
   position: absolute;
@@ -268,13 +268,13 @@
   opacity: .3;
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .head-left {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .head-left {
   position: absolute;
   background-color: #000000;
   left: 5px;
@@ -283,7 +283,7 @@
   border-top-left-radius: 100%;
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .body-left {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .body-left {
   position: absolute;
   background-color: #000000;
   left: 5px;
@@ -293,7 +293,7 @@
   border-bottom-left-radius: 70%;
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-left {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-left {
   position: absolute;
   left: 5px;
   top: 25px;
@@ -304,7 +304,7 @@
           transform: rotate(-45deg);
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-left::before {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-left::before {
   content: "";
   position: absolute;
   left: -10px;
@@ -317,7 +317,7 @@
           transform: rotate(25deg);
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .head-right {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .head-right {
   position: absolute;
   background-color: #000000;
   left: 10px;
@@ -326,7 +326,7 @@
   border-top-right-radius: 100%;
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .body-right {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .body-right {
   position: absolute;
   background-color: #000000;
   left: 10px;
@@ -336,7 +336,7 @@
   border-bottom-right-radius: 70%;
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-right {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-right {
   position: absolute;
   left: 5px;
   top: 25px;
@@ -347,7 +347,7 @@
           transform: rotate(135deg);
 }
 
-* .parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-right::before {
+.parent .loader .loader-items > .rocket-shadow-parent > .rocket .rocket-content .footer-right::before {
   content: "";
   position: absolute;
   left: -8px;
