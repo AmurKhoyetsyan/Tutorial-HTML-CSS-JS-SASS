@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-* .parent {
+.parent {
   width: 100vw;
   height: 100vh;
   background-color: #e06363;
@@ -22,12 +22,12 @@
           align-items: center;
 }
 
-* .parent .loader {
+.parent .loader {
   width: 150px;
   height: 40px;
 }
 
-* .parent .loader .loader-title {
+.parent .loader .loader-title {
   padding-top: 10px;
   width: 100%;
   color: #FFFFFF;
@@ -37,7 +37,7 @@
   text-align: center;
 }
 
-* .parent .loader .loader-items {
+.parent .loader .loader-items {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,7 +52,7 @@
           align-items: center;
 }
 
-* .parent .loader .loader-items .buble {
+.parent .loader .loader-items .buble {
   width: 30px;
   height: 30px;
   background-color: #FFFFFF;
