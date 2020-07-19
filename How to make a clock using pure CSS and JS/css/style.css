@@ -5,11 +5,11 @@
           box-sizing: border-box;
 }
 
-* body {
+body {
   padding: 30px;
 }
 
-* body .clock {
+.clock {
   position: relative;
   background-color: #f5f5dc;
   width: 170px;
@@ -29,7 +29,7 @@
           box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.55), inset 0 0 5px 0 rgba(0, 0, 0, 0.55), 0 0 5px 0 rgba(0, 0, 0, 0.55), inset 0 0 5px 0 rgba(0, 0, 0, 0.55);
 }
 
-* body .clock::before {
+.clock::before {
   content: '';
   width: 10px;
   height: 10px;
@@ -39,14 +39,14 @@
   z-index: 9999;
 }
 
-* body .clock .item::before {
+.clock .item::before {
   content: '';
   width: 8px;
   height: 3px;
   background-color: #000000;
 }
 
-* body .clock .item-hour::before {
+.clock .item-hour::before {
   content: attr(data-count);
   color: #000000;
   font-size: 14px;
@@ -54,7 +54,7 @@
   line-height: 1.7;
 }
 
-* body .clock .item-count {
+.clock .item-count {
   width: 15px;
   height: 15px;
   position: absolute;
@@ -69,32 +69,32 @@
           align-items: center;
 }
 
-* body .clock .item-count:nth-child(1), * body .clock .item-count:nth-child(7) {
+.clock .item-count:nth-child(1), .clock .item-count:nth-child(7) {
   -webkit-transform: rotateZ(-60deg);
           transform: rotateZ(-60deg);
 }
 
-* body .clock .item-count:nth-child(2), * body .clock .item-count:nth-child(8) {
+.clock .item-count:nth-child(2), .clock .item-count:nth-child(8) {
   -webkit-transform: rotateZ(-35deg);
           transform: rotateZ(-35deg);
 }
 
-* body .clock .item-count:nth-child(4), * body .clock .item-count:nth-child(10) {
+.clock .item-count:nth-child(4), .clock .item-count:nth-child(10) {
   -webkit-transform: rotateZ(35deg);
           transform: rotateZ(35deg);
 }
 
-* body .clock .item-count:nth-child(5), * body .clock .item-count:nth-child(11) {
+.clock .item-count:nth-child(5), .clock .item-count:nth-child(11) {
   -webkit-transform: rotateZ(60deg);
           transform: rotateZ(60deg);
 }
 
-* body .clock .hour {
+.clock .hour {
   width: 80px;
   height: 80px;
 }
 
-* body .clock .hour::before {
+.clock .hour::before {
   content: '';
   position: absolute;
   width: 6px;
@@ -104,12 +104,12 @@
   border-radius: 3px 3px 0 0;
 }
 
-* body .clock .min {
+.clock .min {
   width: 100px;
   height: 100px;
 }
 
-* body .clock .min::before {
+.clock .min::before {
   content: '';
   position: absolute;
   width: 3px;
@@ -119,12 +119,12 @@
   border-radius: 3px 3px 0 0;
 }
 
-* body .clock .sec {
+.clock .sec {
   width: 120px;
   height: 120px;
 }
 
-* body .clock .sec::before {
+.clock .sec::before {
   content: '';
   position: absolute;
   width: 2px;
@@ -134,9 +134,9 @@
   border-radius: 3px 3px 0 0;
 }
 
-* body .clock .hour,
-* body .clock .min,
-* body .clock .sec {
+.clock .hour,
+.clock .min,
+.clock .sec {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
