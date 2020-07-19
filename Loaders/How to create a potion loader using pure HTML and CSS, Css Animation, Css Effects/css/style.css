@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-* .parent {
+.parent {
   width: 100vw;
   height: 100vh;
   background-color: #18212A;
@@ -26,11 +26,11 @@
           align-items: center;
 }
 
-* .parent .loader {
+.parent .loader {
   width: 100px;
 }
 
-* .parent .loader .loader-title {
+.parent .loader .loader-title {
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -39,13 +39,13 @@
   color: #FFFFFF;
 }
 
-* .parent .loader .loader-items {
+.parent .loader .loader-items {
   width: 100%;
   height: 185px;
   position: relative;
 }
 
-* .parent .loader .loader-items .cap {
+.parent .loader .loader-items .cap {
   width: 50px;
   height: 30px;
   background-color: #B9661C;
@@ -56,7 +56,7 @@
           transform: translateX(-50%);
 }
 
-* .parent .loader .loader-items .cap::after {
+.parent .loader .loader-items .cap::after {
   content: "";
   height: 100%;
   width: 50%;
@@ -65,7 +65,7 @@
   position: absolute;
 }
 
-* .parent .loader .loader-items .glass {
+.parent .loader .loader-items .glass {
   width: 50px;
   height: 150px;
   background-color: #B5F0E8;
@@ -80,13 +80,13 @@
   overflow: hidden;
 }
 
-* .parent .loader .loader-items .glass .glass-content {
+.parent .loader .loader-items .glass .glass-content {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-* .parent .loader .loader-items .glass .glass-content .fill {
+.parent .loader .loader-items .glass .glass-content .fill {
   position: absolute;
   bottom: 5px;
   background-color: #DA0000;
@@ -100,13 +100,13 @@
           animation: loader 1500ms linear infinite;
 }
 
-* .parent .loader .loader-items .glass .glass-content .fill .fill-content {
+.parent .loader .loader-items .glass .glass-content .fill .fill-content {
   width: 100%;
   height: 100%;
   position: relative;
 }
 
-* .parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble {
+.parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble {
   position: absolute;
   width: 40%;
   height: 15%;
@@ -116,7 +116,7 @@
   left: 2px;
 }
 
-* .parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble:nth-child(2), * .parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble:nth-child(4) {
+.parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble:nth-child(2), .parent .loader .loader-items .glass .glass-content .fill .fill-content .bubble:nth-child(4) {
   left: calc(100% - 10px);
 }
 
