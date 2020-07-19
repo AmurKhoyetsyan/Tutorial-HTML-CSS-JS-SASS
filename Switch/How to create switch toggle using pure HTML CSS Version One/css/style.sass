@@ -2,49 +2,50 @@
     padding: 0
     margin: 0
     box-sizing: border-box
-    .parent
-        width: 100vw
-        height: 100vh
-        background-color: #333333
-        display: flex
-        flex-direction: row
-        flex-wrap: nowrap
-        justify-content: center
-        align-items: center
-        .check-input
-            display: none
-        .check-label
-            width: 70px
-            height: 30px
-            border: 1px solid #ECECEC
-            border-radius: 15px
-            position: relative
-            cursor: pointer
-            &::after
-                content: "Off"
-                position: absolute
-                top: 50%
-                transform: translateY(-50%)
-                right: 10px
-                font-weight: 700
-                color: #FFFFFF
-                font-size: 16px
-                line-height: 1.7
-                z-index: 1
-            &::before
-                content: ""
-                width: 24px
-                height: 24px
-                background-color: #00FF00
-                border-radius: 100%
-                position: absolute
-                left: 0
-                border: 2px solid #ECECEC
-                z-index: 2
-                transition: left 300ms ease-in-out
-        .check-input:checked + .check-label::after
-            content: "On"
-            left: 10px
-            right: auto
-        .check-input:checked + .check-label::before
-            left: calc(100% - 26px)
+
+.parent
+    width: 100vw
+    height: 100vh
+    background-color: #333333
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    .check-input
+        display: none
+    .check-label
+        width: 70px
+        height: 30px
+        border: 1px solid #ECECEC
+        border-radius: 15px
+        position: relative
+        cursor: pointer
+        &::after
+            content: "Off"
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            right: 10px
+            font-weight: 700
+            color: #FFFFFF
+            font-size: 16px
+            line-height: 1.7
+            z-index: 1
+        &::before
+            content: ""
+            width: 24px
+            height: 24px
+            background-color: #00FF00
+            border-radius: 100%
+            position: absolute
+            left: 0
+            border: 2px solid #ECECEC
+            z-index: 2
+            transition: left 300ms ease-in-out
+    .check-input:checked + .check-label::after
+        content: "On"
+        left: 10px
+        right: auto
+    .check-input:checked + .check-label::before
+        left: calc(100% - 26px)
