@@ -2,56 +2,57 @@
     padding: 0
     margin: 0
     box-sizing: border-box
-    .parent
-        width: 100vw
-        height: 100vh
-        background-color: #B12C2C
-        display: flex
-        flex-wrap: nowrap
-        flex-direction: row
-        justify-content: center
-        align-items: center
-        .loader
-            width: 100px
-            .loader-title
-                width: 100%
-                text-align: center
-                font-weight: 700
-                line-height: 1.7
-                font-size: 20px
-                color: #FFFFFF
-            .loader-items
-                width: 100%
-                height: 100px
-                position: relative
-                .heart
-                    width: 40px
-                    height: 40px
+
+.parent
+    width: 100vw
+    height: 100vh
+    background-color: #B12C2C
+    display: flex
+    flex-wrap: nowrap
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    .loader
+        width: 100px
+        .loader-title
+            width: 100%
+            text-align: center
+            font-weight: 700
+            line-height: 1.7
+            font-size: 20px
+            color: #FFFFFF
+        .loader-items
+            width: 100%
+            height: 100px
+            position: relative
+            .heart
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-85%, -75%)
+                background-color: #FFFFFF
+                animation: loader 1000ms linear infinite
+                &::after
+                    content: ""
+                    width: 100%
+                    height: 100%
                     border-radius: 50%
                     position: absolute
-                    left: 50%
-                    top: 50%
-                    transform: translate(-85%, -75%)
+                    left: 30px
+                    top: 0
                     background-color: #FFFFFF
-                    animation: loader 1000ms linear infinite
-                    &::after
-                        content: ""
-                        width: 100%
-                        height: 100%
-                        border-radius: 50%
-                        position: absolute
-                        left: 30px
-                        top: 0
-                        background-color: #FFFFFF
-                    &::before
-                        content: ""
-                        width: 100%
-                        height: 100%
-                        transform: rotate(45deg)
-                        position: absolute
-                        left: 15px
-                        top: 15px
-                        background-color: #FFFFFF
+                &::before
+                    content: ""
+                    width: 100%
+                    height: 100%
+                    transform: rotate(45deg)
+                    position: absolute
+                    left: 15px
+                    top: 15px
+                    background-color: #FFFFFF
 
 @keyframes loader
     to

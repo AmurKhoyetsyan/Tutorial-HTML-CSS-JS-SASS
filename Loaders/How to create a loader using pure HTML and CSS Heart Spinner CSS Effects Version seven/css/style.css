@@ -5,7 +5,7 @@
           box-sizing: border-box;
 }
 
-* .parent {
+.parent {
   width: 100vw;
   height: 100vh;
   background-color: #B12C2C;
@@ -26,11 +26,11 @@
           align-items: center;
 }
 
-* .parent .loader {
+.parent .loader {
   width: 100px;
 }
 
-* .parent .loader .loader-title {
+.parent .loader .loader-title {
   width: 100%;
   text-align: center;
   font-weight: 700;
@@ -39,13 +39,13 @@
   color: #FFFFFF;
 }
 
-* .parent .loader .loader-items {
+.parent .loader .loader-items {
   width: 100%;
   height: 100px;
   position: relative;
 }
 
-* .parent .loader .loader-items .heart {
+.parent .loader .loader-items .heart {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -59,7 +59,7 @@
           animation: loader 1000ms linear infinite;
 }
 
-* .parent .loader .loader-items .heart::after {
+.parent .loader .loader-items .heart::after {
   content: "";
   width: 100%;
   height: 100%;
@@ -70,7 +70,7 @@
   background-color: #FFFFFF;
 }
 
-* .parent .loader .loader-items .heart::before {
+.parent .loader .loader-items .heart::before {
   content: "";
   width: 100%;
   height: 100%;
