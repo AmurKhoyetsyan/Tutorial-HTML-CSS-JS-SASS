@@ -2,114 +2,115 @@
     padding: 0
     margin: 0
     box-sizing: border-box
-    .parent
-        width: 100vw
-        height: 100vh
-        background-color: #282E3A
-        display: flex
-        flex-direction: row
-        flex-wrap: nowrap
-        justify-content: center
-        align-items: center
-        .animation
-            width: 260px
-            .animation-items
-                width: 100%
-                height: 260px
-                position: relative
-                .camera
-                    width: 80%
-                    height: 80%
-                    position: absolute
-                    top: 50%
-                    left: 50%
-                    animation: animationCamera 2000ms linear infinite
-                    .camera-content
+
+.parent
+    width: 100vw
+    height: 100vh
+    background-color: #282E3A
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    .animation
+        width: 260px
+        .animation-items
+            width: 100%
+            height: 260px
+            position: relative
+            .camera
+                width: 80%
+                height: 80%
+                position: absolute
+                top: 50%
+                left: 50%
+                animation: animationCamera 2000ms linear infinite
+                .camera-content
+                    width: 100%
+                    height: 100%
+                    position: relative
+                    .camera-header
                         width: 100%
-                        height: 100%
-                        position: relative
-                        .camera-header
-                            width: 100%
-                            height: 50%
-                            background-color: #FFFFFF
-                            border-top-left-radius: 15% 30%
-                            border-top-right-radius: 15% 30%
-                            &::before
-                                content: ""
-                                width: 10%
-                                height: 10%
-                                background-color: #E67E22
-                                position: absolute
-                                top: 10%
-                                left: 10%
-                                border-radius: 50%
-                                animation: animationGlass 2000ms linear infinite
-                            &::after
-                                content: ""
-                                width: 25%
-                                height: 10%
-                                background-color: #68B5F1
-                                position: absolute
-                                top: 10%
-                                right: 10%
-                                border-radius: 25%/50%
-                                animation: animationGlass 2000ms linear infinite
-                        .camera-footer
-                            width: 100%
-                            height: 50%
-                            background-color: #E67E22
-                            border-top: 15px solid #DD660E
-                            border-bottom-left-radius: 15% 30%
-                            border-bottom-right-radius: 15% 30%
-                            box-shadow: inset 0 -20px 0 0 #DB640E
-                            &::before
-                                content: ""
-                                position: absolute
-                                background-color: #282E3A
-                                width: 50%
-                                height: 10%
-                                left: 25%
-                                top: 60%
-                                animation: animationGlass 2000ms linear infinite
-                            &::after
-                                content: ""
-                                position: absolute
-                                background-color: #FFFFFF
-                                width: 40%
-                                left: 30%
-                                top: 60%
-                                box-shadow: 0 10px 0 0 #DB640E, inset 0 10px 0 0 #C3D1DD
-                                animation: animationPaper 2000ms linear infinite
-                        .glass
+                        height: 50%
+                        background-color: #FFFFFF
+                        border-top-left-radius: 15% 30%
+                        border-top-right-radius: 15% 30%
+                        &::before
+                            content: ""
                             width: 10%
                             height: 10%
+                            background-color: #E67E22
                             position: absolute
-                            top: 30%
-                            left: 45%
-                            border-radius: 50%/50%
-                            transform: translateX(-50%)
-                            background-color: #243E6E
-                            padding: 5px
-                            box-shadow: 0 0 0 18px #3E5489, 0 0 0 23px #1C3666, 0 0 0 30px #ECF0F1, 0 7px 0 30px rgba(0, 0, 0, 0.2)
+                            top: 10%
+                            left: 10%
+                            border-radius: 50%
                             animation: animationGlass 2000ms linear infinite
-                            &::before
-                                content: ""
-                                width: 90%
-                                height: 90%
-                                position: absolute
-                                top: -60%
-                                left: -60%
-                                border-radius: 50%/50%
-                                background-color: #A3BFD5
-                            &::after
-                                content: ""
-                                width: 70%
-                                height: 70%
-                                position: absolute
-                                top: 80%
-                                left: 80%
-                                border-radius: 50%/50%
-                                background-color: #6078A3
+                        &::after
+                            content: ""
+                            width: 25%
+                            height: 10%
+                            background-color: #68B5F1
+                            position: absolute
+                            top: 10%
+                            right: 10%
+                            border-radius: 25%/50%
+                            animation: animationGlass 2000ms linear infinite
+                    .camera-footer
+                        width: 100%
+                        height: 50%
+                        background-color: #E67E22
+                        border-top: 15px solid #DD660E
+                        border-bottom-left-radius: 15% 30%
+                        border-bottom-right-radius: 15% 30%
+                        box-shadow: inset 0 -20px 0 0 #DB640E
+                        &::before
+                            content: ""
+                            position: absolute
+                            background-color: #282E3A
+                            width: 50%
+                            height: 10%
+                            left: 25%
+                            top: 60%
+                            animation: animationGlass 2000ms linear infinite
+                        &::after
+                            content: ""
+                            position: absolute
+                            background-color: #FFFFFF
+                            width: 40%
+                            left: 30%
+                            top: 60%
+                            box-shadow: 0 10px 0 0 #DB640E, inset 0 10px 0 0 #C3D1DD
+                            animation: animationPaper 2000ms linear infinite
+                    .glass
+                        width: 10%
+                        height: 10%
+                        position: absolute
+                        top: 30%
+                        left: 45%
+                        border-radius: 50%/50%
+                        transform: translateX(-50%)
+                        background-color: #243E6E
+                        padding: 5px
+                        box-shadow: 0 0 0 18px #3E5489, 0 0 0 23px #1C3666, 0 0 0 30px #ECF0F1, 0 7px 0 30px rgba(0, 0, 0, 0.2)
+                        animation: animationGlass 2000ms linear infinite
+                        &::before
+                            content: ""
+                            width: 90%
+                            height: 90%
+                            position: absolute
+                            top: -60%
+                            left: -60%
+                            border-radius: 50%/50%
+                            background-color: #A3BFD5
+                        &::after
+                            content: ""
+                            width: 70%
+                            height: 70%
+                            position: absolute
+                            top: 80%
+                            left: 80%
+                            border-radius: 50%/50%
+                            background-color: #6078A3
 
 @keyframes animationGlass
     from
