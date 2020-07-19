@@ -10,448 +10,449 @@ $black: #160F05
     margin: 0
     box-sizing: border-box
     user-select: none
-    .parent
-        width: 100vw
-        height: 100vh
-        background-color: $green
-        display: flex
-        flex-direction: row
-        flex-wrap: nowrap
-        justify-content: center
-        align-items: center
-        cursor: move
-        .animation
-            width: 150px
-            height: 150px
-            position: relative
+
+.parent
+    width: 100vw
+    height: 100vh
+    background-color: $green
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    cursor: move
+    .animation
+        width: 150px
+        height: 150px
+        position: relative
+        transform-style: preserve-3d
+        transform: rotateY(0) rotateX(0)
+        .animation-items
+            width: 100%
+            height: 100%
             transform-style: preserve-3d
-            transform: rotateY(0) rotateX(0)
-            .animation-items
-                width: 100%
-                height: 100%
+            transform-origin: 50% 50% -75px
+            .fox-face
+                position: absolute
+                width: 80px
+                height: 80px
+                background-color: $orange
+                border: 1px solid $border-orange
+                transform: translate3d(35px, 35px, 35px)
                 transform-style: preserve-3d
-                transform-origin: 50% 50% -75px
-                .fox-face
+                .eye
                     position: absolute
-                    width: 80px
-                    height: 80px
-                    background-color: $orange
-                    border: 1px solid $border-orange
-                    transform: translate3d(35px, 35px, 35px)
-                    transform-style: preserve-3d
-                    .eye
+                    top: 20px
+                    width: 15px
+                    height: 15px
+                    background-color: $black
+                    &::before
+                        content: ""
+                        width: 7px
+                        height: 7px
+                        background-color: $white
                         position: absolute
-                        top: 20px
-                        width: 15px
-                        height: 15px
-                        background-color: $black
+                        top: 0
+                    &:nth-child(1)
+                        left: 10px
                         &::before
-                            content: ""
-                            width: 7px
-                            height: 7px
-                            background-color: $white
-                            position: absolute
-                            top: 0
-                        &:nth-child(1)
-                            left: 10px
-                            &::before
-                                left: 0
-                        &:nth-child(2)
-                            right: 10px
-                            &::before
-                                right: 0
-                    .snout
-                        position: absolute
-                        bottom: 0
-                        left: 50%
-                        transform: translateX(-50%)
-                        width: 35px
-                        height: 35px
-                        transform-style: preserve-3d
-                        .snout-header
-                            position: absolute
-                            width: 25px
-                            height: 20px
-                            background-color: $white
-                            bottom: 10px
-                            left: 50%
-                            transform: translateX(-50%)
-                        .snout-footer
-                            position: absolute
-                            width: 35px
-                            height: 10px
-                            background-color: $white
-                            bottom: 0
-                        .mouth
-                            position: absolute
-                            width: 25px
-                            height: 20px
-                            bottom: 20px
-                            left: 50%
-                            transform: translateX(-50%)
-                            transform-style: preserve-3d
-                            .mouth-header,
-                            .mouth-footer
-                                position: absolute
-                                width: 25px
-                                height: 13px
-                                bottom: -5px
-                                transform-style: preserve-3d
-                            .mouth-header
-                                bottom: 5px
-                                .mouth-side
-                                    background-color: $orange
-                                    border: 1px solid $border-orange
-                                    height: 10px
-                                    &:nth-child(3)::before
-                                        content: ""
-                                        width: 50%
-                                        height: 14px
-                                        position: absolute
-                                        left: 50%
-                                        top: -1px
-                                        transform: translateX(-50%)
-                                        background-color: $black
-                                    &:nth-child(4)::before
-                                        content: ""
-                                        width: 50%
-                                        height: 55%
-                                        position: absolute
-                                        left: 50%
-                                        bottom: -1px
-                                        transform: translateX(-50%)
-                                        background-color: $black
-                            .mouth-side
-                                position: absolute
-                                width: 25px
-                                height: 13px
-                                background-color: $white
-                                border: 1px solid $border-white
-                                &:nth-child(1)
-                                    transform: translate3d(15px, 0, 10px) rotateY(90deg)
-                                    width: 20px
-                                &:nth-child(2)
-                                    transform: translate3d(-10px, 0, 10px) rotateY(90deg)
-                                    width: 20px
-                                &:nth-child(3)
-                                    transform: translate3d(0, 0, 20px) rotateY(0)
-                                &:nth-child(4)
-                                    transform: translate3d(0, -10px, 10px) rotateX(90deg)
-                                    width: 25px
-                                    height: 20px
-                                &:nth-child(5)
-                                    transform: translate3d(0, 0, 10px) rotateX(90deg)
-                                    width: 25px
-                                    height: 20px
-                .fox-left-side,
-                .fox-right-side,
-                .fox-top-side,
-                .fox-back-side
-                    position: absolute
-                    width: 80px
-                    height: 80px
-                    background-color: $orange
-                    border: 1px solid $border-orange
-                    transform: translate3d(75px, 35px, -5px) rotateY(90deg)
-                .fox-right-side
-                    transform: translate3d(-5px, 35px, -5px) rotateY(90deg)
-                .fox-left-side::before,
-                .fox-right-side::before,
-                .fox-back-side::before
-                    content: ""
+                            left: 0
+                    &:nth-child(2)
+                        right: 10px
+                        &::before
+                            right: 0
+                .snout
                     position: absolute
                     bottom: 0
                     left: 50%
                     transform: translateX(-50%)
-                    background-color: $white
-                    width: 30px
-                    height: 10px
-                .fox-bottom-side
-                    position: absolute
-                    width: 80px
-                    height: 80px
-                    background-color: $black
-                    transform: translate3d(35px, 75px, -5px) rotateX(90deg)
-                .fox-top-side
-                    transform: translate3d(35px, -5px, -5px) rotateX(90deg)
-                .fox-back-side
-                    transform: translate3d(35px, 35px, -45px)
-                .fox-ear
-                    position: absolute
-                    width: 20px
-                    height: 25px
+                    width: 35px
+                    height: 35px
                     transform-style: preserve-3d
-                    transform: translate3d(35px, 16px, 35px)
-                    &.right 
-                        transform: translate3d(95px, 16px, 35px)
-                    &::after 
-                        content: ""
-                        width: 12px
-                        height: 12px
-                        background-color: $white
+                    .snout-header
                         position: absolute
-                        bottom: 8px
+                        width: 25px
+                        height: 20px
+                        background-color: $white
+                        bottom: 10px
                         left: 50%
                         transform: translateX(-50%)
-                    .fox-ear-top,
-                    .fox-ear-bottom
+                    .snout-footer
                         position: absolute
-                        width: 20px
+                        width: 35px
                         height: 10px
+                        background-color: $white
+                        bottom: 0
+                    .mouth
+                        position: absolute
+                        width: 25px
+                        height: 20px
+                        bottom: 20px
+                        left: 50%
+                        transform: translateX(-50%)
                         transform-style: preserve-3d
-                        bottom: 4px
-                    .fox-ear-top
-                        height: 15px
-                        bottom: 14px
-                        .fox-ear-side
-                            height: 15px
-                            background-color: $black
-                            border: none
-                    .fox-ear-side
-                        position: absolute
-                        width: 20px
-                        height: 10px
-                        background-color: $orange
-                        border: 1px solid $border-orange
-                        border-bottom: none
-                        &:nth-child(2)
-                            transform: translate3d(10px, 0, -10px) rotateY(90deg)
-                        &:nth-child(3)
-                            transform: translate3d(-10px, 0, -10px) rotateY(90deg)
-                        &:nth-child(4)
-                            height: 20px
-                            transform: translate3d(0, -10px, -10px) rotateX(90deg)
-                        &:nth-child(5)
-                            transform: translate3d(0, 0, -20px)
-                .paw
+                        .mouth-header,
+                        .mouth-footer
+                            position: absolute
+                            width: 25px
+                            height: 13px
+                            bottom: -5px
+                            transform-style: preserve-3d
+                        .mouth-header
+                            bottom: 5px
+                            .mouth-side
+                                background-color: $orange
+                                border: 1px solid $border-orange
+                                height: 10px
+                                &:nth-child(3)::before
+                                    content: ""
+                                    width: 50%
+                                    height: 14px
+                                    position: absolute
+                                    left: 50%
+                                    top: -1px
+                                    transform: translateX(-50%)
+                                    background-color: $black
+                                &:nth-child(4)::before
+                                    content: ""
+                                    width: 50%
+                                    height: 55%
+                                    position: absolute
+                                    left: 50%
+                                    bottom: -1px
+                                    transform: translateX(-50%)
+                                    background-color: $black
+                        .mouth-side
+                            position: absolute
+                            width: 25px
+                            height: 13px
+                            background-color: $white
+                            border: 1px solid $border-white
+                            &:nth-child(1)
+                                transform: translate3d(15px, 0, 10px) rotateY(90deg)
+                                width: 20px
+                            &:nth-child(2)
+                                transform: translate3d(-10px, 0, 10px) rotateY(90deg)
+                                width: 20px
+                            &:nth-child(3)
+                                transform: translate3d(0, 0, 20px) rotateY(0)
+                            &:nth-child(4)
+                                transform: translate3d(0, -10px, 10px) rotateX(90deg)
+                                width: 25px
+                                height: 20px
+                            &:nth-child(5)
+                                transform: translate3d(0, 0, 10px) rotateX(90deg)
+                                width: 25px
+                                height: 20px
+            .fox-left-side,
+            .fox-right-side,
+            .fox-top-side,
+            .fox-back-side
+                position: absolute
+                width: 80px
+                height: 80px
+                background-color: $orange
+                border: 1px solid $border-orange
+                transform: translate3d(75px, 35px, -5px) rotateY(90deg)
+            .fox-right-side
+                transform: translate3d(-5px, 35px, -5px) rotateY(90deg)
+            .fox-left-side::before,
+            .fox-right-side::before,
+            .fox-back-side::before
+                content: ""
+                position: absolute
+                bottom: 0
+                left: 50%
+                transform: translateX(-50%)
+                background-color: $white
+                width: 30px
+                height: 10px
+            .fox-bottom-side
+                position: absolute
+                width: 80px
+                height: 80px
+                background-color: $black
+                transform: translate3d(35px, 75px, -5px) rotateX(90deg)
+            .fox-top-side
+                transform: translate3d(35px, -5px, -5px) rotateX(90deg)
+            .fox-back-side
+                transform: translate3d(35px, 35px, -45px)
+            .fox-ear
+                position: absolute
+                width: 20px
+                height: 25px
+                transform-style: preserve-3d
+                transform: translate3d(35px, 16px, 35px)
+                &.right 
+                    transform: translate3d(95px, 16px, 35px)
+                &::after 
+                    content: ""
+                    width: 12px
+                    height: 12px
+                    background-color: $white
                     position: absolute
-                    width: 15px
-                    height: 15px
-                    transform-style: preserve-3d
-                    transform: translate3d(35px, 115px, 35px)
-                    &.two
-                        transform: translate3d(100px, 115px, 35px)
-                    &.there
-                        transform: translate3d(35px, 115px, -30px)
-                    &.four
-                        transform: translate3d(100px, 115px, -30px)
-                    .paw-side
-                        position: absolute
-                        background-color: $black
-                        width: 15px
-                        height: 15px
-                        &:nth-child(2)
-                            transform: translate3d(7.5px, 0, -7.5px) rotateY(90deg)
-                        &:nth-child(3)
-                            transform: translate3d(-7.5px, 0, -7.5px) rotateY(90deg)
-                        &:nth-child(4)
-                            transform: translate3d(0, 7.5px, -7.5px) rotateX(90deg)
-                        &:nth-child(5)
-                            transform: translate3d(0, 0, -15px)
-                .tali
+                    bottom: 8px
+                    left: 50%
+                    transform: translateX(-50%)
+                .fox-ear-top,
+                .fox-ear-bottom
                     position: absolute
                     width: 20px
-                    height: 95px
-                    transform: translate3d(65px, 0px, -46px)
+                    height: 10px
                     transform-style: preserve-3d
-                    &::before
-                        content: ""
-                        width: 20px
-                        height: 10px
-                        position: absolute
-                        bottom: -10px
-                        background-color: $white
-                    .tali-footer-bottom
+                    bottom: 4px
+                .fox-ear-top
+                    height: 15px
+                    bottom: 14px
+                    .fox-ear-side
+                        height: 15px
+                        background-color: $black
+                        border: none
+                .fox-ear-side
+                    position: absolute
+                    width: 20px
+                    height: 10px
+                    background-color: $orange
+                    border: 1px solid $border-orange
+                    border-bottom: none
+                    &:nth-child(2)
+                        transform: translate3d(10px, 0, -10px) rotateY(90deg)
+                    &:nth-child(3)
+                        transform: translate3d(-10px, 0, -10px) rotateY(90deg)
+                    &:nth-child(4)
+                        height: 20px
+                        transform: translate3d(0, -10px, -10px) rotateX(90deg)
+                    &:nth-child(5)
+                        transform: translate3d(0, 0, -20px)
+            .paw
+                position: absolute
+                width: 15px
+                height: 15px
+                transform-style: preserve-3d
+                transform: translate3d(35px, 115px, 35px)
+                &.two
+                    transform: translate3d(100px, 115px, 35px)
+                &.there
+                    transform: translate3d(35px, 115px, -30px)
+                &.four
+                    transform: translate3d(100px, 115px, -30px)
+                .paw-side
+                    position: absolute
+                    background-color: $black
+                    width: 15px
+                    height: 15px
+                    &:nth-child(2)
+                        transform: translate3d(7.5px, 0, -7.5px) rotateY(90deg)
+                    &:nth-child(3)
+                        transform: translate3d(-7.5px, 0, -7.5px) rotateY(90deg)
+                    &:nth-child(4)
+                        transform: translate3d(0, 7.5px, -7.5px) rotateX(90deg)
+                    &:nth-child(5)
+                        transform: translate3d(0, 0, -15px)
+            .tali
+                position: absolute
+                width: 20px
+                height: 95px
+                transform: translate3d(65px, 0px, -46px)
+                transform-style: preserve-3d
+                &::before
+                    content: ""
+                    width: 20px
+                    height: 10px
+                    position: absolute
+                    bottom: -10px
+                    background-color: $white
+                .tali-footer-bottom
+                    width: 20px
+                    height: 15px
+                    position: absolute
+                    transform-style: preserve-3d
+                    bottom: 0
+                    .tali-footer-bottom-side
                         width: 20px
                         height: 15px
-                        position: absolute
-                        transform-style: preserve-3d
-                        bottom: 0
-                        .tali-footer-bottom-side
-                            width: 20px
-                            height: 15px
-                            position: absolute
-                            background-color: $white
-                            border: 1px solid $border-white
-                            &:nth-child(1)
-                                width: 15px
-                                transform: translate3d(12px, 1px, -6px) rotateY(90deg)
-                            &:nth-child(2)
-                                width: 15px
-                                transform: translate3d(-7px, 1px, -6px) rotateY(90deg)
-                            &:nth-child(3)
-                                transform: translate3d(0, 8px, -6px) rotateX(90deg)
-                            &:nth-child(4)
-                                width: 15px
-                                height: 21px
-                                transform: translate3d(2px, -1px, -12px) rotateZ(90deg)
-                    .tali-top
-                        width: 40px
-                        height: 40px
-                        position: absolute
-                        transform-style: preserve-3d
-                        bottom: 50px
-                        .tali-top-side
-                            width: 40px
-                            height: 40px
-                            position: absolute
-                            background-color: $orange
-                            border: 1px solid $border-orange
-                            &:nth-child(1)
-                                width: 50px
-                                transform: translate3d(-15px, 10px, 15px) rotateX(90deg)
-                            &:nth-child(2)
-                                height: 5px
-                                transform: translate3d(-35px, 25px, 15px) rotateY(90deg)
-                            &:nth-child(3)
-                                height: 5px
-                                transform: translate3d(15px, 25px, 15px) rotateY(90deg)
-                            &:nth-child(4)
-                                width: 50px
-                                height: 15px
-                                transform: translate3d(-15px, 15px, 35px)
-                            &:nth-child(5)
-                                width: 10px
-                                height: 10px
-                                transform: translate3d(30px, 15px, 30px) rotateY(90deg)
-                            &:nth-child(6)
-                                width: 10px
-                                height: 10px
-                                transform: translate3d(-20px, 15px, 30px) rotateY(90deg)
-                            &:nth-child(7)
-                                width: 50px
-                                height: 10px
-                                transform: translate3d(-15px, 10px, 30px) rotateX(90deg)
-                    .tali-footer-top-one
-                        width: 40px
-                        height: 30px
-                        position: absolute
-                        transform-style: preserve-3d
-                        bottom: 28px
-                        .tali-footer-top-side
-                            width: 15px
-                            height: 15px
-                            position: absolute
-                            background-color: $orange
-                            border: 1px solid $border-orange
-                            &:nth-child(1)
-                                height: 30px
-                                transform: translate3d(22px, -3px, -6px) rotateY(90deg)
-                            &:nth-child(2)
-                                height: 30px
-                                transform: translate3d(-17px, -3px, -6px) rotateY(90deg)
-                            &:nth-child(3)
-                                width: 40px
-                                transform: translate3d(-10px, 18px, -5px) rotateX(90deg)
-                            &:nth-child(4)
-                                width: 30px
-                                height: 40px
-                                transform: translate3d(-5px, -8px, -13px) rotateZ(90deg)
-                    .tali-footer-top-two
-                        width: 40px
-                        height: 40px
-                        position: absolute
-                        transform-style: preserve-3d
-                        bottom: 28px
-                        .tali-footer-top-side
-                            width: 5px
-                            height: 40px
-                            position: absolute
-                            background-color: $white
-                            border: 1px solid $border-white
-                            &:nth-child(1)
-                                transform: translate3d(27px, -3px, -15px) rotateY(90deg)
-                            &:nth-child(2)
-                                transform: translate3d(-13px, -3px, -15px) rotateY(90deg)
-                            &:nth-child(3)
-                                width: 40px
-                                height: 5px
-                                transform: translate3d(-10px, 34px, -15px) rotateX(90deg)
-                            &:nth-child(4)
-                                width: 40px
-                                height: 40px
-                                transform: translate3d(-10px, -3px, -17px) rotateZ(90deg)
-                            &:nth-child(5)
-                                width: 40px
-                                height: 5px
-                                transform: translate3d(-10px, -5px, -16px) rotateX(90deg)
-                            &:nth-child(6)
-                                width: 10px
-                                height: 50px
-                                transform: translate3d(5px, -23px, -13px) rotateZ(90deg)
-                            &:nth-child(7)
-                                width: 50px
-                                height: 30px
-                                transform: translate3d(-15px, -17px, 2px) rotateX(90deg)
-                            &:nth-child(8)
-                                width: 50px
-                                height: 10px
-                                transform: translate3d(-15px, 2px, -9px) rotateX(90deg)
-                            &:nth-child(9)
-                                border-top: none
-                                width: 10px
-                                height: 5px
-                                transform: translate3d(30px, 2px, -9px) rotateY(90deg)
-                            &:nth-child(10)
-                                border-top: none
-                                width: 10px
-                                height: 5px
-                                transform: translate3d(-20px, 2px, -9px) rotateY(90deg)
-                            &:nth-child(11)
-                                border-top: none
-                                width: 40px
-                                height: 5px
-                                transform: translate3d(-35px, -2px, 6px) rotateY(90deg)
-                            &:nth-child(12)
-                                border-top: none
-                                width: 40px
-                                height: 5px
-                                transform: translate3d(15px, -2px, 6px) rotateY(90deg)
-                            &:nth-child(13)
-                                height: 50px
-                                transform: translate3d(7.5px, -29px, 17px) rotateZ(90deg)
-                            &:nth-child(14)
-                                border-bottom: none
-                                width: 10px
-                                height: 5px
-                                transform: translate3d(30px, -7px, 21px) rotateY(90deg)
-                            &:nth-child(15)
-                                border-bottom: none
-                                width: 10px
-                                height: 5px
-                                transform: translate3d(-19px, -7px, 21px) rotateY(90deg)
-                            &:nth-child(16)
-                                width: 50px
-                                height: 10px
-                                transform: translate3d(-15px, -12px, 21px) rotateX(90deg)
-                    .tali-footer-center-one,
-                    .tali-footer-center-two
-                        width: 20px
-                        height: 20px
-                        position: absolute
-                        transform-style: preserve-3d
-                        bottom: 10px
-                    .tali-footer-center-one .tali-footer-center-side
-                        width: 20px
-                        height: 20px
-                        position: absolute
-                        background-color: $orange
-                        border: 1px solid $border-orange
-                        &:nth-child(1)
-                            transform: translate3d(10px, -3px, 2px) rotateY(90deg)
-                        &:nth-child(2)
-                            transform: translate3d(-12px, -3px, 2px) rotateY(90deg)
-                    .tali-footer-center-two .tali-footer-center-side
-                        width: 7px
-                        height: 20px
                         position: absolute
                         background-color: $white
                         border: 1px solid $border-white
                         &:nth-child(1)
-                            transform: translate3d(17px, -3px, -10px) rotateY(90deg)
+                            width: 15px
+                            transform: translate3d(12px, 1px, -6px) rotateY(90deg)
                         &:nth-child(2)
-                            transform: translate3d(-6px, -3px, -10px) rotateY(90deg)
+                            width: 15px
+                            transform: translate3d(-7px, 1px, -6px) rotateY(90deg)
                         &:nth-child(3)
-                            width: 20px
-                            height: 22px
-                            transform: translate3d(-1px, -3px, -13px) rotateZ(90deg)
+                            transform: translate3d(0, 8px, -6px) rotateX(90deg)
+                        &:nth-child(4)
+                            width: 15px
+                            height: 21px
+                            transform: translate3d(2px, -1px, -12px) rotateZ(90deg)
+                .tali-top
+                    width: 40px
+                    height: 40px
+                    position: absolute
+                    transform-style: preserve-3d
+                    bottom: 50px
+                    .tali-top-side
+                        width: 40px
+                        height: 40px
+                        position: absolute
+                        background-color: $orange
+                        border: 1px solid $border-orange
+                        &:nth-child(1)
+                            width: 50px
+                            transform: translate3d(-15px, 10px, 15px) rotateX(90deg)
+                        &:nth-child(2)
+                            height: 5px
+                            transform: translate3d(-35px, 25px, 15px) rotateY(90deg)
+                        &:nth-child(3)
+                            height: 5px
+                            transform: translate3d(15px, 25px, 15px) rotateY(90deg)
+                        &:nth-child(4)
+                            width: 50px
+                            height: 15px
+                            transform: translate3d(-15px, 15px, 35px)
+                        &:nth-child(5)
+                            width: 10px
+                            height: 10px
+                            transform: translate3d(30px, 15px, 30px) rotateY(90deg)
+                        &:nth-child(6)
+                            width: 10px
+                            height: 10px
+                            transform: translate3d(-20px, 15px, 30px) rotateY(90deg)
+                        &:nth-child(7)
+                            width: 50px
+                            height: 10px
+                            transform: translate3d(-15px, 10px, 30px) rotateX(90deg)
+                .tali-footer-top-one
+                    width: 40px
+                    height: 30px
+                    position: absolute
+                    transform-style: preserve-3d
+                    bottom: 28px
+                    .tali-footer-top-side
+                        width: 15px
+                        height: 15px
+                        position: absolute
+                        background-color: $orange
+                        border: 1px solid $border-orange
+                        &:nth-child(1)
+                            height: 30px
+                            transform: translate3d(22px, -3px, -6px) rotateY(90deg)
+                        &:nth-child(2)
+                            height: 30px
+                            transform: translate3d(-17px, -3px, -6px) rotateY(90deg)
+                        &:nth-child(3)
+                            width: 40px
+                            transform: translate3d(-10px, 18px, -5px) rotateX(90deg)
+                        &:nth-child(4)
+                            width: 30px
+                            height: 40px
+                            transform: translate3d(-5px, -8px, -13px) rotateZ(90deg)
+                .tali-footer-top-two
+                    width: 40px
+                    height: 40px
+                    position: absolute
+                    transform-style: preserve-3d
+                    bottom: 28px
+                    .tali-footer-top-side
+                        width: 5px
+                        height: 40px
+                        position: absolute
+                        background-color: $white
+                        border: 1px solid $border-white
+                        &:nth-child(1)
+                            transform: translate3d(27px, -3px, -15px) rotateY(90deg)
+                        &:nth-child(2)
+                            transform: translate3d(-13px, -3px, -15px) rotateY(90deg)
+                        &:nth-child(3)
+                            width: 40px
+                            height: 5px
+                            transform: translate3d(-10px, 34px, -15px) rotateX(90deg)
+                        &:nth-child(4)
+                            width: 40px
+                            height: 40px
+                            transform: translate3d(-10px, -3px, -17px) rotateZ(90deg)
+                        &:nth-child(5)
+                            width: 40px
+                            height: 5px
+                            transform: translate3d(-10px, -5px, -16px) rotateX(90deg)
+                        &:nth-child(6)
+                            width: 10px
+                            height: 50px
+                            transform: translate3d(5px, -23px, -13px) rotateZ(90deg)
+                        &:nth-child(7)
+                            width: 50px
+                            height: 30px
+                            transform: translate3d(-15px, -17px, 2px) rotateX(90deg)
+                        &:nth-child(8)
+                            width: 50px
+                            height: 10px
+                            transform: translate3d(-15px, 2px, -9px) rotateX(90deg)
+                        &:nth-child(9)
+                            border-top: none
+                            width: 10px
+                            height: 5px
+                            transform: translate3d(30px, 2px, -9px) rotateY(90deg)
+                        &:nth-child(10)
+                            border-top: none
+                            width: 10px
+                            height: 5px
+                            transform: translate3d(-20px, 2px, -9px) rotateY(90deg)
+                        &:nth-child(11)
+                            border-top: none
+                            width: 40px
+                            height: 5px
+                            transform: translate3d(-35px, -2px, 6px) rotateY(90deg)
+                        &:nth-child(12)
+                            border-top: none
+                            width: 40px
+                            height: 5px
+                            transform: translate3d(15px, -2px, 6px) rotateY(90deg)
+                        &:nth-child(13)
+                            height: 50px
+                            transform: translate3d(7.5px, -29px, 17px) rotateZ(90deg)
+                        &:nth-child(14)
+                            border-bottom: none
+                            width: 10px
+                            height: 5px
+                            transform: translate3d(30px, -7px, 21px) rotateY(90deg)
+                        &:nth-child(15)
+                            border-bottom: none
+                            width: 10px
+                            height: 5px
+                            transform: translate3d(-19px, -7px, 21px) rotateY(90deg)
+                        &:nth-child(16)
+                            width: 50px
+                            height: 10px
+                            transform: translate3d(-15px, -12px, 21px) rotateX(90deg)
+                .tali-footer-center-one,
+                .tali-footer-center-two
+                    width: 20px
+                    height: 20px
+                    position: absolute
+                    transform-style: preserve-3d
+                    bottom: 10px
+                .tali-footer-center-one .tali-footer-center-side
+                    width: 20px
+                    height: 20px
+                    position: absolute
+                    background-color: $orange
+                    border: 1px solid $border-orange
+                    &:nth-child(1)
+                        transform: translate3d(10px, -3px, 2px) rotateY(90deg)
+                    &:nth-child(2)
+                        transform: translate3d(-12px, -3px, 2px) rotateY(90deg)
+                .tali-footer-center-two .tali-footer-center-side
+                    width: 7px
+                    height: 20px
+                    position: absolute
+                    background-color: $white
+                    border: 1px solid $border-white
+                    &:nth-child(1)
+                        transform: translate3d(17px, -3px, -10px) rotateY(90deg)
+                    &:nth-child(2)
+                        transform: translate3d(-6px, -3px, -10px) rotateY(90deg)
+                    &:nth-child(3)
+                        width: 20px
+                        height: 22px
+                        transform: translate3d(-1px, -3px, -13px) rotateZ(90deg)

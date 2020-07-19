@@ -9,7 +9,7 @@
           user-select: none;
 }
 
-* .parent {
+.parent {
   width: 100vw;
   height: 100vh;
   background-color: #62A823;
@@ -31,7 +31,7 @@
   cursor: move;
 }
 
-* .parent .animation {
+.parent .animation {
   width: 150px;
   height: 150px;
   position: relative;
@@ -41,7 +41,7 @@
           transform: rotateY(0) rotateX(0);
 }
 
-* .parent .animation .animation-items {
+.parent .animation .animation-items {
   width: 100%;
   height: 100%;
   -webkit-transform-style: preserve-3d;
@@ -50,7 +50,7 @@
           transform-origin: 50% 50% -75px;
 }
 
-* .parent .animation .animation-items .fox-face {
+.parent .animation .animation-items .fox-face {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -62,7 +62,7 @@
           transform-style: preserve-3d;
 }
 
-* .parent .animation .animation-items .fox-face .eye {
+.parent .animation .animation-items .fox-face .eye {
   position: absolute;
   top: 20px;
   width: 15px;
@@ -70,7 +70,7 @@
   background-color: #160F05;
 }
 
-* .parent .animation .animation-items .fox-face .eye::before {
+.parent .animation .animation-items .fox-face .eye::before {
   content: "";
   width: 7px;
   height: 7px;
@@ -79,23 +79,23 @@
   top: 0;
 }
 
-* .parent .animation .animation-items .fox-face .eye:nth-child(1) {
+.parent .animation .animation-items .fox-face .eye:nth-child(1) {
   left: 10px;
 }
 
-* .parent .animation .animation-items .fox-face .eye:nth-child(1)::before {
+.parent .animation .animation-items .fox-face .eye:nth-child(1)::before {
   left: 0;
 }
 
-* .parent .animation .animation-items .fox-face .eye:nth-child(2) {
+.parent .animation .animation-items .fox-face .eye:nth-child(2) {
   right: 10px;
 }
 
-* .parent .animation .animation-items .fox-face .eye:nth-child(2)::before {
+.parent .animation .animation-items .fox-face .eye:nth-child(2)::before {
   right: 0;
 }
 
-* .parent .animation .animation-items .fox-face .snout {
+.parent .animation .animation-items .fox-face .snout {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -107,7 +107,7 @@
           transform-style: preserve-3d;
 }
 
-* .parent .animation .animation-items .fox-face .snout .snout-header {
+.parent .animation .animation-items .fox-face .snout .snout-header {
   position: absolute;
   width: 25px;
   height: 20px;
@@ -118,7 +118,7 @@
           transform: translateX(-50%);
 }
 
-* .parent .animation .animation-items .fox-face .snout .snout-footer {
+.parent .animation .animation-items .fox-face .snout .snout-footer {
   position: absolute;
   width: 35px;
   height: 10px;
@@ -126,7 +126,7 @@
   bottom: 0;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth {
+.parent .animation .animation-items .fox-face .snout .mouth {
   position: absolute;
   width: 25px;
   height: 20px;
@@ -138,8 +138,8 @@
           transform-style: preserve-3d;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-header,
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-footer {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-header,
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-footer {
   position: absolute;
   width: 25px;
   height: 13px;
@@ -148,17 +148,17 @@
           transform-style: preserve-3d;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-header {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-header {
   bottom: 5px;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-header .mouth-side {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-header .mouth-side {
   background-color: #DC7415;
   border: 1px solid #C56006;
   height: 10px;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-header .mouth-side:nth-child(3)::before {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-header .mouth-side:nth-child(3)::before {
   content: "";
   width: 50%;
   height: 14px;
@@ -170,7 +170,7 @@
   background-color: #160F05;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-header .mouth-side:nth-child(4)::before {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-header .mouth-side:nth-child(4)::before {
   content: "";
   width: 50%;
   height: 55%;
@@ -182,7 +182,7 @@
   background-color: #160F05;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-side {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-side {
   position: absolute;
   width: 25px;
   height: 13px;
@@ -190,41 +190,41 @@
   border: 1px solid #C5BF8B;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(1) {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(1) {
   -webkit-transform: translate3d(15px, 0, 10px) rotateY(90deg);
           transform: translate3d(15px, 0, 10px) rotateY(90deg);
   width: 20px;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(2) {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(2) {
   -webkit-transform: translate3d(-10px, 0, 10px) rotateY(90deg);
           transform: translate3d(-10px, 0, 10px) rotateY(90deg);
   width: 20px;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(3) {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(3) {
   -webkit-transform: translate3d(0, 0, 20px) rotateY(0);
           transform: translate3d(0, 0, 20px) rotateY(0);
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(4) {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(4) {
   -webkit-transform: translate3d(0, -10px, 10px) rotateX(90deg);
           transform: translate3d(0, -10px, 10px) rotateX(90deg);
   width: 25px;
   height: 20px;
 }
 
-* .parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(5) {
+.parent .animation .animation-items .fox-face .snout .mouth .mouth-side:nth-child(5) {
   -webkit-transform: translate3d(0, 0, 10px) rotateX(90deg);
           transform: translate3d(0, 0, 10px) rotateX(90deg);
   width: 25px;
   height: 20px;
 }
 
-* .parent .animation .animation-items .fox-left-side,
-* .parent .animation .animation-items .fox-right-side,
-* .parent .animation .animation-items .fox-top-side,
-* .parent .animation .animation-items .fox-back-side {
+.parent .animation .animation-items .fox-left-side,
+.parent .animation .animation-items .fox-right-side,
+.parent .animation .animation-items .fox-top-side,
+.parent .animation .animation-items .fox-back-side {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -234,14 +234,14 @@
           transform: translate3d(75px, 35px, -5px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .fox-right-side {
+.parent .animation .animation-items .fox-right-side {
   -webkit-transform: translate3d(-5px, 35px, -5px) rotateY(90deg);
           transform: translate3d(-5px, 35px, -5px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .fox-left-side::before,
-* .parent .animation .animation-items .fox-right-side::before,
-* .parent .animation .animation-items .fox-back-side::before {
+.parent .animation .animation-items .fox-left-side::before,
+.parent .animation .animation-items .fox-right-side::before,
+.parent .animation .animation-items .fox-back-side::before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -253,7 +253,7 @@
   height: 10px;
 }
 
-* .parent .animation .animation-items .fox-bottom-side {
+.parent .animation .animation-items .fox-bottom-side {
   position: absolute;
   width: 80px;
   height: 80px;
@@ -262,17 +262,17 @@
           transform: translate3d(35px, 75px, -5px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .fox-top-side {
+.parent .animation .animation-items .fox-top-side {
   -webkit-transform: translate3d(35px, -5px, -5px) rotateX(90deg);
           transform: translate3d(35px, -5px, -5px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .fox-back-side {
+.parent .animation .animation-items .fox-back-side {
   -webkit-transform: translate3d(35px, 35px, -45px);
           transform: translate3d(35px, 35px, -45px);
 }
 
-* .parent .animation .animation-items .fox-ear {
+.parent .animation .animation-items .fox-ear {
   position: absolute;
   width: 20px;
   height: 25px;
@@ -282,12 +282,12 @@
           transform: translate3d(35px, 16px, 35px);
 }
 
-* .parent .animation .animation-items .fox-ear.right {
+.parent .animation .animation-items .fox-ear.right {
   -webkit-transform: translate3d(95px, 16px, 35px);
           transform: translate3d(95px, 16px, 35px);
 }
 
-* .parent .animation .animation-items .fox-ear::after {
+.parent .animation .animation-items .fox-ear::after {
   content: "";
   width: 12px;
   height: 12px;
@@ -299,8 +299,8 @@
           transform: translateX(-50%);
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-top,
-* .parent .animation .animation-items .fox-ear .fox-ear-bottom {
+.parent .animation .animation-items .fox-ear .fox-ear-top,
+.parent .animation .animation-items .fox-ear .fox-ear-bottom {
   position: absolute;
   width: 20px;
   height: 10px;
@@ -309,18 +309,18 @@
   bottom: 4px;
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-top {
+.parent .animation .animation-items .fox-ear .fox-ear-top {
   height: 15px;
   bottom: 14px;
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-top .fox-ear-side {
+.parent .animation .animation-items .fox-ear .fox-ear-top .fox-ear-side {
   height: 15px;
   background-color: #160F05;
   border: none;
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-side {
+.parent .animation .animation-items .fox-ear .fox-ear-side {
   position: absolute;
   width: 20px;
   height: 10px;
@@ -329,28 +329,28 @@
   border-bottom: none;
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(2) {
+.parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(2) {
   -webkit-transform: translate3d(10px, 0, -10px) rotateY(90deg);
           transform: translate3d(10px, 0, -10px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(3) {
+.parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(3) {
   -webkit-transform: translate3d(-10px, 0, -10px) rotateY(90deg);
           transform: translate3d(-10px, 0, -10px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(4) {
+.parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(4) {
   height: 20px;
   -webkit-transform: translate3d(0, -10px, -10px) rotateX(90deg);
           transform: translate3d(0, -10px, -10px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(5) {
+.parent .animation .animation-items .fox-ear .fox-ear-side:nth-child(5) {
   -webkit-transform: translate3d(0, 0, -20px);
           transform: translate3d(0, 0, -20px);
 }
 
-* .parent .animation .animation-items .paw {
+.parent .animation .animation-items .paw {
   position: absolute;
   width: 15px;
   height: 15px;
@@ -360,49 +360,49 @@
           transform: translate3d(35px, 115px, 35px);
 }
 
-* .parent .animation .animation-items .paw.two {
+.parent .animation .animation-items .paw.two {
   -webkit-transform: translate3d(100px, 115px, 35px);
           transform: translate3d(100px, 115px, 35px);
 }
 
-* .parent .animation .animation-items .paw.there {
+.parent .animation .animation-items .paw.there {
   -webkit-transform: translate3d(35px, 115px, -30px);
           transform: translate3d(35px, 115px, -30px);
 }
 
-* .parent .animation .animation-items .paw.four {
+.parent .animation .animation-items .paw.four {
   -webkit-transform: translate3d(100px, 115px, -30px);
           transform: translate3d(100px, 115px, -30px);
 }
 
-* .parent .animation .animation-items .paw .paw-side {
+.parent .animation .animation-items .paw .paw-side {
   position: absolute;
   background-color: #160F05;
   width: 15px;
   height: 15px;
 }
 
-* .parent .animation .animation-items .paw .paw-side:nth-child(2) {
+.parent .animation .animation-items .paw .paw-side:nth-child(2) {
   -webkit-transform: translate3d(7.5px, 0, -7.5px) rotateY(90deg);
           transform: translate3d(7.5px, 0, -7.5px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .paw .paw-side:nth-child(3) {
+.parent .animation .animation-items .paw .paw-side:nth-child(3) {
   -webkit-transform: translate3d(-7.5px, 0, -7.5px) rotateY(90deg);
           transform: translate3d(-7.5px, 0, -7.5px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .paw .paw-side:nth-child(4) {
+.parent .animation .animation-items .paw .paw-side:nth-child(4) {
   -webkit-transform: translate3d(0, 7.5px, -7.5px) rotateX(90deg);
           transform: translate3d(0, 7.5px, -7.5px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .paw .paw-side:nth-child(5) {
+.parent .animation .animation-items .paw .paw-side:nth-child(5) {
   -webkit-transform: translate3d(0, 0, -15px);
           transform: translate3d(0, 0, -15px);
 }
 
-* .parent .animation .animation-items .tali {
+.parent .animation .animation-items .tali {
   position: absolute;
   width: 20px;
   height: 95px;
@@ -412,7 +412,7 @@
           transform-style: preserve-3d;
 }
 
-* .parent .animation .animation-items .tali::before {
+.parent .animation .animation-items .tali::before {
   content: "";
   width: 20px;
   height: 10px;
@@ -421,7 +421,7 @@
   background-color: #D9D9BC;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-bottom {
+.parent .animation .animation-items .tali .tali-footer-bottom {
   width: 20px;
   height: 15px;
   position: absolute;
@@ -430,7 +430,7 @@
   bottom: 0;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side {
+.parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side {
   width: 20px;
   height: 15px;
   position: absolute;
@@ -438,31 +438,31 @@
   border: 1px solid #C5BF8B;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(1) {
+.parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(1) {
   width: 15px;
   -webkit-transform: translate3d(12px, 1px, -6px) rotateY(90deg);
           transform: translate3d(12px, 1px, -6px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(2) {
+.parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(2) {
   width: 15px;
   -webkit-transform: translate3d(-7px, 1px, -6px) rotateY(90deg);
           transform: translate3d(-7px, 1px, -6px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(3) {
+.parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(3) {
   -webkit-transform: translate3d(0, 8px, -6px) rotateX(90deg);
           transform: translate3d(0, 8px, -6px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(4) {
+.parent .animation .animation-items .tali .tali-footer-bottom .tali-footer-bottom-side:nth-child(4) {
   width: 15px;
   height: 21px;
   -webkit-transform: translate3d(2px, -1px, -12px) rotateZ(90deg);
           transform: translate3d(2px, -1px, -12px) rotateZ(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-top {
+.parent .animation .animation-items .tali .tali-top {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -471,7 +471,7 @@
   bottom: 50px;
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side {
+.parent .animation .animation-items .tali .tali-top .tali-top-side {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -479,53 +479,53 @@
   border: 1px solid #C56006;
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(1) {
+.parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(1) {
   width: 50px;
   -webkit-transform: translate3d(-15px, 10px, 15px) rotateX(90deg);
           transform: translate3d(-15px, 10px, 15px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(2) {
+.parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(2) {
   height: 5px;
   -webkit-transform: translate3d(-35px, 25px, 15px) rotateY(90deg);
           transform: translate3d(-35px, 25px, 15px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(3) {
+.parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(3) {
   height: 5px;
   -webkit-transform: translate3d(15px, 25px, 15px) rotateY(90deg);
           transform: translate3d(15px, 25px, 15px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(4) {
+.parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(4) {
   width: 50px;
   height: 15px;
   -webkit-transform: translate3d(-15px, 15px, 35px);
           transform: translate3d(-15px, 15px, 35px);
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(5) {
+.parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(5) {
   width: 10px;
   height: 10px;
   -webkit-transform: translate3d(30px, 15px, 30px) rotateY(90deg);
           transform: translate3d(30px, 15px, 30px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(6) {
+.parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(6) {
   width: 10px;
   height: 10px;
   -webkit-transform: translate3d(-20px, 15px, 30px) rotateY(90deg);
           transform: translate3d(-20px, 15px, 30px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(7) {
+.parent .animation .animation-items .tali .tali-top .tali-top-side:nth-child(7) {
   width: 50px;
   height: 10px;
   -webkit-transform: translate3d(-15px, 10px, 30px) rotateX(90deg);
           transform: translate3d(-15px, 10px, 30px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-one {
+.parent .animation .animation-items .tali .tali-footer-top-one {
   width: 40px;
   height: 30px;
   position: absolute;
@@ -534,7 +534,7 @@
   bottom: 28px;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side {
+.parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side {
   width: 15px;
   height: 15px;
   position: absolute;
@@ -542,32 +542,32 @@
   border: 1px solid #C56006;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(1) {
+.parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(1) {
   height: 30px;
   -webkit-transform: translate3d(22px, -3px, -6px) rotateY(90deg);
           transform: translate3d(22px, -3px, -6px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(2) {
+.parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(2) {
   height: 30px;
   -webkit-transform: translate3d(-17px, -3px, -6px) rotateY(90deg);
           transform: translate3d(-17px, -3px, -6px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(3) {
+.parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(3) {
   width: 40px;
   -webkit-transform: translate3d(-10px, 18px, -5px) rotateX(90deg);
           transform: translate3d(-10px, 18px, -5px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(4) {
+.parent .animation .animation-items .tali .tali-footer-top-one .tali-footer-top-side:nth-child(4) {
   width: 30px;
   height: 40px;
   -webkit-transform: translate3d(-5px, -8px, -13px) rotateZ(90deg);
           transform: translate3d(-5px, -8px, -13px) rotateZ(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two {
+.parent .animation .animation-items .tali .tali-footer-top-two {
   width: 40px;
   height: 40px;
   position: absolute;
@@ -576,7 +576,7 @@
   bottom: 28px;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side {
   width: 5px;
   height: 40px;
   position: absolute;
@@ -584,59 +584,59 @@
   border: 1px solid #C5BF8B;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(1) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(1) {
   -webkit-transform: translate3d(27px, -3px, -15px) rotateY(90deg);
           transform: translate3d(27px, -3px, -15px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(2) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(2) {
   -webkit-transform: translate3d(-13px, -3px, -15px) rotateY(90deg);
           transform: translate3d(-13px, -3px, -15px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(3) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(3) {
   width: 40px;
   height: 5px;
   -webkit-transform: translate3d(-10px, 34px, -15px) rotateX(90deg);
           transform: translate3d(-10px, 34px, -15px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(4) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(4) {
   width: 40px;
   height: 40px;
   -webkit-transform: translate3d(-10px, -3px, -17px) rotateZ(90deg);
           transform: translate3d(-10px, -3px, -17px) rotateZ(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(5) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(5) {
   width: 40px;
   height: 5px;
   -webkit-transform: translate3d(-10px, -5px, -16px) rotateX(90deg);
           transform: translate3d(-10px, -5px, -16px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(6) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(6) {
   width: 10px;
   height: 50px;
   -webkit-transform: translate3d(5px, -23px, -13px) rotateZ(90deg);
           transform: translate3d(5px, -23px, -13px) rotateZ(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(7) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(7) {
   width: 50px;
   height: 30px;
   -webkit-transform: translate3d(-15px, -17px, 2px) rotateX(90deg);
           transform: translate3d(-15px, -17px, 2px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(8) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(8) {
   width: 50px;
   height: 10px;
   -webkit-transform: translate3d(-15px, 2px, -9px) rotateX(90deg);
           transform: translate3d(-15px, 2px, -9px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(9) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(9) {
   border-top: none;
   width: 10px;
   height: 5px;
@@ -644,7 +644,7 @@
           transform: translate3d(30px, 2px, -9px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(10) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(10) {
   border-top: none;
   width: 10px;
   height: 5px;
@@ -652,7 +652,7 @@
           transform: translate3d(-20px, 2px, -9px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(11) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(11) {
   border-top: none;
   width: 40px;
   height: 5px;
@@ -660,7 +660,7 @@
           transform: translate3d(-35px, -2px, 6px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(12) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(12) {
   border-top: none;
   width: 40px;
   height: 5px;
@@ -668,13 +668,13 @@
           transform: translate3d(15px, -2px, 6px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(13) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(13) {
   height: 50px;
   -webkit-transform: translate3d(7.5px, -29px, 17px) rotateZ(90deg);
           transform: translate3d(7.5px, -29px, 17px) rotateZ(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(14) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(14) {
   border-bottom: none;
   width: 10px;
   height: 5px;
@@ -682,7 +682,7 @@
           transform: translate3d(30px, -7px, 21px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(15) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(15) {
   border-bottom: none;
   width: 10px;
   height: 5px;
@@ -690,15 +690,15 @@
           transform: translate3d(-19px, -7px, 21px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(16) {
+.parent .animation .animation-items .tali .tali-footer-top-two .tali-footer-top-side:nth-child(16) {
   width: 50px;
   height: 10px;
   -webkit-transform: translate3d(-15px, -12px, 21px) rotateX(90deg);
           transform: translate3d(-15px, -12px, 21px) rotateX(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-one,
-* .parent .animation .animation-items .tali .tali-footer-center-two {
+.parent .animation .animation-items .tali .tali-footer-center-one,
+.parent .animation .animation-items .tali .tali-footer-center-two {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -707,7 +707,7 @@
   bottom: 10px;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-one .tali-footer-center-side {
+.parent .animation .animation-items .tali .tali-footer-center-one .tali-footer-center-side {
   width: 20px;
   height: 20px;
   position: absolute;
@@ -715,17 +715,17 @@
   border: 1px solid #C56006;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-one .tali-footer-center-side:nth-child(1) {
+.parent .animation .animation-items .tali .tali-footer-center-one .tali-footer-center-side:nth-child(1) {
   -webkit-transform: translate3d(10px, -3px, 2px) rotateY(90deg);
           transform: translate3d(10px, -3px, 2px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-one .tali-footer-center-side:nth-child(2) {
+.parent .animation .animation-items .tali .tali-footer-center-one .tali-footer-center-side:nth-child(2) {
   -webkit-transform: translate3d(-12px, -3px, 2px) rotateY(90deg);
           transform: translate3d(-12px, -3px, 2px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side {
+.parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side {
   width: 7px;
   height: 20px;
   position: absolute;
@@ -733,17 +733,17 @@
   border: 1px solid #C5BF8B;
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side:nth-child(1) {
+.parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side:nth-child(1) {
   -webkit-transform: translate3d(17px, -3px, -10px) rotateY(90deg);
           transform: translate3d(17px, -3px, -10px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side:nth-child(2) {
+.parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side:nth-child(2) {
   -webkit-transform: translate3d(-6px, -3px, -10px) rotateY(90deg);
           transform: translate3d(-6px, -3px, -10px) rotateY(90deg);
 }
 
-* .parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side:nth-child(3) {
+.parent .animation .animation-items .tali .tali-footer-center-two .tali-footer-center-side:nth-child(3) {
   width: 20px;
   height: 22px;
   -webkit-transform: translate3d(-1px, -3px, -13px) rotateZ(90deg);
