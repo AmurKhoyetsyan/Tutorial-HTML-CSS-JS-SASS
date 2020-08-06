@@ -1,0 +1,30 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.parent
+    width: 100vw
+    height: 100vh
+    background-color: #FFFFFF
+    display: flex
+    flex-direction: row
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+    .file-upload
+        width: 500px
+        height: 280px
+        display: flex
+        flex-direction: row
+        flex-wrap: nowrap
+        justify-content: center
+        align-items: center
+        border: 2px dashed #909090
+        background-color: #E7E7E7
+        &.dragover
+            background-color: #BABABA
+        &::before
+            content: attr(data-content)
+            color: #333333
+            font-size: 32px
