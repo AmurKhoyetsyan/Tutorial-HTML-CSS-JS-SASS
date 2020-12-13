@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent-traffic-light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #325d62;
+}
+
+.parent-traffic-light .traffic-light {
+  width: 70px;
+  height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  border: 1px solid #000000;
+  background: linear-gradient(107deg, #555555 50%, #333333 50%);
+}
+
+.parent-traffic-light .traffic-light .circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #000000;
+  -webkit-box-shadow: 0 0 3px 0 #FFFFFF;
+          box-shadow: 0 0 3px 0 #FFFFFF;
+  position: relative;
+}
+
+.parent-traffic-light .traffic-light .circle::before {
+  content: "";
+  width: 50%;
+  height: 40%;
+  background-color: #FFFFFF;
+  opacity: 0.2;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.parent-traffic-light .traffic-light .circle.green {
+  background-color: #00FF00;
+  -webkit-box-shadow: 0 0 15px 0 #6EFF6E;
+          box-shadow: 0 0 15px 0 #6EFF6E;
+}
+
+.parent-traffic-light .traffic-light .circle.yellow {
+  background-color: #FF8800;
+  -webkit-box-shadow: 0 0 15px 0 #FFDB6E;
+          box-shadow: 0 0 15px 0 #FFDB6E;
+}
+
+.parent-traffic-light .traffic-light .circle.red {
+  background-color: #FF0000;
+  -webkit-box-shadow: 0 0 15px 0 #FF6E6E;
+          box-shadow: 0 0 15px 0 #FF6E6E;
+}
+
+.parent-traffic-light .parent-btn {
+  padding: 10px;
+}
+
+.parent-traffic-light .parent-btn .btn-run {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #000000;
+  background-color: #A0A0A0;
+  cursor: pointer;
+  -webkit-transition: background-color 300ms linear;
+  transition: background-color 300ms linear;
+}
+
+.parent-traffic-light .parent-btn .btn-run:hover {
+  background-color: #5C5C5C;
+  outline: none;
+}
+
+.parent-traffic-light .parent-btn .btn-run:active, .parent-traffic-light .parent-btn .btn-run:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

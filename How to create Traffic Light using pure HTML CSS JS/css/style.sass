@@ -1,0 +1,66 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.parent-traffic-light
+    display: flex
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: center
+    justify-content: center
+    width: 100vw
+    height: 100vh
+    background-color: #325d62
+    .traffic-light
+        width: 70px
+        height: 200px
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        border-radius: 15px
+        border: 1px solid #000000
+        background: linear-gradient(107deg, #555555 50%, #333333 50%)
+        .circle
+            width: 50px
+            height: 50px
+            border-radius: 25px
+            background-color: #000000
+            box-shadow: 0 0 3px 0 #FFFFFF
+            position: relative
+            &::before
+                content: ""
+                width: 50%
+                height: 40%
+                background-color: #FFFFFF
+                opacity: 0.2
+                position: absolute
+                border-radius: 50%
+                left: 50%
+                top: 20%
+                transform: translateX(-50%)
+            &.green
+                background-color: #00FF00
+                box-shadow: 0 0 15px 0 #6EFF6E
+            &.yellow
+                background-color: #FF8800
+                box-shadow: 0 0 15px 0 #FFDB6E
+            &.red
+                background-color: #FF0000
+                box-shadow: 0 0 15px 0 #FF6E6E
+    .parent-btn
+        padding: 10px
+        .btn-run
+            padding: 5px 10px
+            border-radius: 5px
+            border: 1px solid #000000
+            background-color: #A0A0A0
+            cursor: pointer
+            transition: background-color 300ms linear
+            &:hover
+                background-color: #5C5C5C
+                outline: none
+            &:active,
+            &:focus
+                outline: none
