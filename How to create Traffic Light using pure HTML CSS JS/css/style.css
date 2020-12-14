@@ -76,16 +76,28 @@
           box-shadow: 0 0 15px 0 #6EFF6E;
 }
 
+.parent-traffic-light .traffic-light .circle.green::before {
+  content: none;
+}
+
 .parent-traffic-light .traffic-light .circle.yellow {
   background-color: #FF8800;
   -webkit-box-shadow: 0 0 15px 0 #FFDB6E;
           box-shadow: 0 0 15px 0 #FFDB6E;
 }
 
+.parent-traffic-light .traffic-light .circle.yellow::before {
+  content: none;
+}
+
 .parent-traffic-light .traffic-light .circle.red {
   background-color: #FF0000;
   -webkit-box-shadow: 0 0 15px 0 #FF6E6E;
           box-shadow: 0 0 15px 0 #FF6E6E;
+}
+
+.parent-traffic-light .traffic-light .circle.red::before {
+  content: none;
 }
 
 .parent-traffic-light .parent-btn {
