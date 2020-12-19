@@ -16,15 +16,12 @@
 
     function runInterval(elem, colors) {
         elem[count].classList.add(colors[count]);
-        len = elem.length;
+        let len = elem.length;
         interval = setInterval(function(){
             removeClasses(elem, colors);
             count += step;
             elem[count].classList.add(colors[count]);
-            if(count === len - 1) {
-                step = -step;
-            }
-            if(count === 0) {
+            if(count === len - 1 || count === 0) {
                 step = -step;
             }
         }, 1000);
