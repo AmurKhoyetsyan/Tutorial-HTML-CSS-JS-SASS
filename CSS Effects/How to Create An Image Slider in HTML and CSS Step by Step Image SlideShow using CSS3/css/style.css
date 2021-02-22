@@ -1,0 +1,185 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.d-block {
+  display: block;
+}
+
+.parent {
+  width: 100vw;
+  height: 100vh;
+  background-color: #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.parent .parent-slider {
+  width: 1000px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.parent .parent-slider .slider-items {
+  width: 300%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-transition: left 300ms ease-in-out;
+  transition: left 300ms ease-in-out;
+}
+
+.parent .parent-slider .slider-items .items {
+  width: calc(100% / 3);
+}
+
+[name="item"] {
+  display: none;
+}
+
+.left.item1,
+.left.item2,
+.left.item3,
+.right.item1,
+.right.item2,
+.right.item3 {
+  position: absolute;
+  cursor: pointer;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.left.item1 .arrow.right,
+.left.item2 .arrow.right,
+.left.item3 .arrow.right,
+.right.item1 .arrow.right,
+.right.item2 .arrow.right,
+.right.item3 .arrow.right {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-left: 15px solid #D1D1D1;
+  left: auto;
+  right: 10px;
+}
+
+.left.item1 .arrow.left,
+.left.item2 .arrow.left,
+.left.item3 .arrow.left,
+.right.item1 .arrow.left,
+.right.item2 .arrow.left,
+.right.item3 .arrow.left {
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  border-right: 15px solid #D1D1D1;
+}
+
+.left.item1 .arrow.right,
+.left.item2 .arrow.right,
+.left.item3 .arrow.right,
+.right.item1 .arrow.right,
+.right.item2 .arrow.right,
+.right.item3 .arrow.right,
+.left.item1 .arrow.left,
+.left.item2 .arrow.left,
+.left.item3 .arrow.left,
+.right.item1 .arrow.left,
+.right.item2 .arrow.left,
+.right.item3 .arrow.left {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.left.item1:hover,
+.left.item2:hover,
+.left.item3:hover,
+.right.item1:hover,
+.right.item2:hover,
+.right.item3:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.right.item1,
+.right.item2,
+.right.item3 {
+  right: 0;
+  left: auto;
+}
+
+#item1:checked ~ .slider-items {
+  left: 0;
+}
+
+#item1:checked ~ .left.item1 {
+  display: block;
+}
+
+#item1:checked ~ .right.item2 {
+  display: block;
+}
+
+#item2:checked ~ .slider-items {
+  left: -100%;
+}
+
+#item2:checked ~ .left.item2 {
+  display: block;
+}
+
+#item2:checked ~ .right.item3 {
+  display: block;
+}
+
+#item3:checked ~ .slider-items {
+  left: -200%;
+}
+
+#item3:checked ~ .left.item3 {
+  display: block;
+}
+
+#item3:checked ~ .right.item1 {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */
