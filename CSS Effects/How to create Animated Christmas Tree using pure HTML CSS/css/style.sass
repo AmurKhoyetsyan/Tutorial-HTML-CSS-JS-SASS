@@ -1,0 +1,138 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.d-flex-center
+    display: flex
+    flex-wrap: nowrap
+    justify-content: center
+    align-items: center
+
+.parent
+    @extend .d-flex-center
+    flex-direction: row
+    width: 100vw
+    height: 100vh
+    background-color: #EC7474
+    .circle
+        width: 150px
+        height: 150px
+        overflow: hidden
+        position: relative
+        border-radius: 50%
+        border: 3px solid #FFFFFF
+        box-shadow: 0 0 5px 0 rgba(255,255,255,0.3)
+        .parent-tree
+            width: 100%
+            height: 100%
+            background-color: #2D3748
+            @extend .d-flex-center
+            flex-direction: row
+        .tree
+            top: 10px
+            position: relative
+            @extend .d-flex-center
+            flex-direction: column
+            .star
+                position: absolute
+                top: -12px
+                width: 8px
+                height: 8px
+                border-radius: 4px
+                background-color: #FFEB00
+                z-index: 4
+            .tree-top
+                z-index: 3
+                .left
+                    left: 6.5px
+                    top: 0
+                    border: 15px solid transparent
+                .right
+                    right: 6.5px
+                    top: 0
+                    border: 15px solid transparent
+            .tree-center
+                z-index: 2
+                .left
+                    top: -5px
+                    left: 1.5px
+                    border: 20px solid transparent
+                .right
+                    top: -5px
+                    right: 1.5px
+                    border: 20px solid transparent
+            .tree-bottom
+                z-index: 1
+                .left
+                    left: -3.5px
+                    top: -10px
+                    border: 25px solid transparent
+                .right
+                    right: -3.5px
+                    top: -10px
+                    border: 25px solid transparent
+            .part
+                position: relative
+                width: 42.5px
+                height: 21.25px
+                .left
+                    position: absolute
+                    border-left-color: #4EEC73
+                    transform: rotate(45deg)
+                .right
+                    position: absolute
+                    border-right-color: #37A550
+                    transform: rotate(-45deg)
+            .trunk
+                position: relative
+                width: 20px
+                height: 25px
+                .left
+                    right: -12px
+                    top: -32px
+                    border: 15px solid transparent
+                    position: absolute
+                    border-right: 7px solid #613C0E
+                    border-top: 30px solid #613C0E
+                    transform: rotate(-180deg)
+                .right
+                    left: -12px
+                    top: -32px
+                    border: 15px solid transparent
+                    position: absolute
+                    border-left: 7px solid #79480C
+                    border-top: 30px solid #79480C
+                    transform: rotate(180deg)
+
+.floor
+    position: absolute
+    top: 78%
+    width: 100%
+    height: 100%
+    background-color: #FFFFFF
+    border-radius: 50%/15%
+
+.parent .circle .parent-snow
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    z-index: 5
+    .snow
+        position: absolute
+        width: calc(var(--size) * 5px)
+        height: calc(var(--size) * 5px)
+        background-color: #FFFFFF
+        border-radius: 50%
+        animation: runSnow 2000ms ease-out infinite
+        animation-delay: calc(var(--delay) * 250ms)
+
+@keyframes runSnow
+    from
+        top: -15px
+        left: calc(var(--left) * 10px)
+    to
+        top: calc(100% + 15px)
+        left: calc(var(--left) * 20px)

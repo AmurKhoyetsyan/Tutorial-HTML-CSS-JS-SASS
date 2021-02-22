@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.d-flex-center, .parent, .parent .circle .parent-tree, .parent .circle .tree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parent {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+  background-color: #EC7474;
+}
+
+.parent .circle {
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 50%;
+  border: 3px solid #FFFFFF;
+  -webkit-box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.3);
+}
+
+.parent .circle .parent-tree {
+  width: 100%;
+  height: 100%;
+  background-color: #2D3748;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.parent .circle .tree {
+  top: 10px;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.parent .circle .tree .star {
+  position: absolute;
+  top: -12px;
+  width: 8px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #FFEB00;
+  z-index: 4;
+}
+
+.parent .circle .tree .tree-top {
+  z-index: 3;
+}
+
+.parent .circle .tree .tree-top .left {
+  left: 6.5px;
+  top: 0;
+  border: 15px solid transparent;
+}
+
+.parent .circle .tree .tree-top .right {
+  right: 6.5px;
+  top: 0;
+  border: 15px solid transparent;
+}
+
+.parent .circle .tree .tree-center {
+  z-index: 2;
+}
+
+.parent .circle .tree .tree-center .left {
+  top: -5px;
+  left: 1.5px;
+  border: 20px solid transparent;
+}
+
+.parent .circle .tree .tree-center .right {
+  top: -5px;
+  right: 1.5px;
+  border: 20px solid transparent;
+}
+
+.parent .circle .tree .tree-bottom {
+  z-index: 1;
+}
+
+.parent .circle .tree .tree-bottom .left {
+  left: -3.5px;
+  top: -10px;
+  border: 25px solid transparent;
+}
+
+.parent .circle .tree .tree-bottom .right {
+  right: -3.5px;
+  top: -10px;
+  border: 25px solid transparent;
+}
+
+.parent .circle .tree .part {
+  position: relative;
+  width: 42.5px;
+  height: 21.25px;
+}
+
+.parent .circle .tree .part .left {
+  position: absolute;
+  border-left-color: #4EEC73;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.parent .circle .tree .part .right {
+  position: absolute;
+  border-right-color: #37A550;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.parent .circle .tree .trunk {
+  position: relative;
+  width: 20px;
+  height: 25px;
+}
+
+.parent .circle .tree .trunk .left {
+  right: -12px;
+  top: -32px;
+  border: 15px solid transparent;
+  position: absolute;
+  border-right: 7px solid #613C0E;
+  border-top: 30px solid #613C0E;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.parent .circle .tree .trunk .right {
+  left: -12px;
+  top: -32px;
+  border: 15px solid transparent;
+  position: absolute;
+  border-left: 7px solid #79480C;
+  border-top: 30px solid #79480C;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.floor {
+  position: absolute;
+  top: 78%;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  border-radius: 50%/15%;
+}
+
+.parent .circle .parent-snow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+}
+
+.parent .circle .parent-snow .snow {
+  position: absolute;
+  width: calc(var(--size) * 5px);
+  height: calc(var(--size) * 5px);
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  -webkit-animation: runSnow 2000ms ease-out infinite;
+          animation: runSnow 2000ms ease-out infinite;
+  -webkit-animation-delay: calc(var(--delay) * 250ms);
+          animation-delay: calc(var(--delay) * 250ms);
+}
+
+@-webkit-keyframes runSnow {
+  from {
+    top: -15px;
+    left: calc(var(--left) * 10px);
+  }
+  to {
+    top: calc(100% + 15px);
+    left: calc(var(--left) * 20px);
+  }
+}
+
+@keyframes runSnow {
+  from {
+    top: -15px;
+    left: calc(var(--left) * 10px);
+  }
+  to {
+    top: calc(100% + 15px);
+    left: calc(var(--left) * 20px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
