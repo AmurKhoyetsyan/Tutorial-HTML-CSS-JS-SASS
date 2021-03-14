@@ -1,0 +1,96 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.parent
+    width: 100vw
+    height: 100vh
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    flex-wrap: nowrap
+    background-color: #0b467b
+    .toogle-parent
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        flex-wrap: nowrap
+        .type
+            color: #FFFFFF
+            font-weight: 700
+            line-height: 1.7
+            font-size: 15px
+            padding-left: 10px
+            padding-right: 10px
+            transition: color 200ms ease-in
+            &.pm
+                color: rgba(255,255,255,0.5)
+        .toogle-input
+            display: none
+
+        .toogle
+            width: 110px
+            height: 50px
+            background-color: #1EAAF1
+            display: block
+            border-radius: 25px
+            box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5)
+            cursor: pointer
+            position: relative
+            transition: background-color 200ms ease-in
+            .moon
+                width: 40px
+                height: 40px
+                border-radius: 50%
+                background-color: #F6E4B2
+                position: absolute
+                top: 50%
+                left: 5px
+                box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+                transform: translateY(-50%)
+                transition: left 200ms ease-in
+                .hole
+                    opacity: 0
+                    top: calc(var(--top) * 10px)
+                    left: calc(var(--left) * 10px)
+                    width: calc(var(--size) * 2px)
+                    height: calc(var(--size) * 2px)
+                    border-radius: 50%
+                    background-color: #D8C188
+                    box-shadow: 0 0 2px 0 rgba(0,0,0,0.5), inset 16px 0 2px -14px rgba(0,0,0,0.15)
+                    transition: opacity 200ms ease-in
+                    position: absolute
+            .star
+                background-color: #FFFFFF
+                position: absolute
+                top: calc(var(--top) * 10px)
+                left: calc(var(--left) * 10px)
+                width: calc(var(--size) * 2px)
+                height: calc(var(--size) * 2px)
+                border-radius: calc(var(--size) * 1.5px)
+                box-shadow: 0 0 5px 0 rgba(0,0,0,0.5)
+                &.cloud
+                    left: calc(calc(var(--left) * 1.5) * 10px)
+                    width: calc(var(--resize) * 5px)
+                    transition: width 200ms ease-in
+                    z-index: 1
+
+        .toogle-input:checked 
+            & ~ .toogle
+                background-color: #739DD6
+                & .moon
+                    left: 65px
+                    .hole
+                        opacity: 1
+                & .star.cloud
+                    left: calc(var(--left) * 10px)
+                    width: calc(var(--size) * 2px)
+                    height: calc(var(--size) * 2px)
+            & ~ .type
+                &.am
+                    color: rgba(255,255,255,0.5)
+                &.pm
+                    color: #FFFFFF
