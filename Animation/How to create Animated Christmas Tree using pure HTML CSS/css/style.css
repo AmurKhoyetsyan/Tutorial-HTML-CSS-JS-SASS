@@ -191,8 +191,8 @@
   border-radius: 50%;
   -webkit-animation: runSnow 2000ms ease-out infinite;
           animation: runSnow 2000ms ease-out infinite;
-  -webkit-animation-delay: calc(var(--delay) * 250ms);
-          animation-delay: calc(var(--delay) * 250ms);
+  -webkit-animation-delay: calc(var(--delay) * -250ms);
+          animation-delay: calc(var(--delay) * -250ms);
 }
 
 @-webkit-keyframes runSnow {

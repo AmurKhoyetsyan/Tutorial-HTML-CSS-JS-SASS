@@ -40,6 +40,8 @@
 }
 
 .parent .loader .loader-items {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
   width: 100%;
   height: 100px;
   position: relative;
@@ -50,8 +52,8 @@
           transform: rotate(calc(var(--i) * 30deg));
   -webkit-animation: loader 1.2s linear infinite;
           animation: loader 1.2s linear infinite;
-  -webkit-animation-delay: calc(var(--i) * 100ms);
-          animation-delay: calc(var(--i) * 100ms);
+  -webkit-animation-delay: calc(var(--i) * -100ms);
+          animation-delay: calc(var(--i) * -100ms);
   -webkit-transform-origin: 50px 50px;
           transform-origin: 50px 50px;
 }

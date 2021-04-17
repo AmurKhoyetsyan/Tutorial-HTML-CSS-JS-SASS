@@ -57,8 +57,8 @@
           transform: translate(-50%, -50%);
   -webkit-animation: loader 1200ms linear infinite;
           animation: loader 1200ms linear infinite;
-  -webkit-animation-delay: calc(var(--i) * 400ms);
-          animation-delay: calc(var(--i) * 400ms);
+  -webkit-animation-delay: calc(var(--i) * -400ms);
+          animation-delay: calc(var(--i) * -400ms);
 }
 
 @-webkit-keyframes loader {

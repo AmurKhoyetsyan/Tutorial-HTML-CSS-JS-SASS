@@ -66,8 +66,8 @@
   border-radius: 5px;
   -webkit-animation: loader 600ms ease-in-out infinite;
           animation: loader 600ms ease-in-out infinite;
-  -webkit-animation-delay: calc(var(--i) * 650ms);
-          animation-delay: calc(var(--i) * 650ms);
+  -webkit-animation-delay: calc(var(--i) * -650ms);
+          animation-delay: calc(var(--i) * -650ms);
 }
 
 @-webkit-keyframes loader {

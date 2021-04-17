@@ -22,13 +22,14 @@
             font-weight: 700
             color: #FFFFFF
         .loader-items
+            transform: rotateY(180deg);
             width: 100%
             height: 100px
             position: relative
             .item
                 transform: rotate(calc(var(--i) * 30deg))
                 animation: loader 1.2s linear infinite
-                animation-delay: calc(var(--i) * 100ms)
+                animation-delay: calc(var(--i) * -100ms)
                 transform-origin: 50px 50px
                 &::after
                     content: ""

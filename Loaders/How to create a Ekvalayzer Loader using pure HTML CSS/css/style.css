@@ -76,8 +76,8 @@
           box-shadow: 0 0 10px 2px #FFFFFF;
   -webkit-animation: ekvalayzer 500ms ease-in-out infinite;
           animation: ekvalayzer 500ms ease-in-out infinite;
-  -webkit-animation-delay: calc(var(--i) * 100ms);
-          animation-delay: calc(var(--i) * 100ms);
+  -webkit-animation-delay: calc(var(--i) * -100ms);
+          animation-delay: calc(var(--i) * -100ms);
 }
 
 @-webkit-keyframes ekvalayzer {

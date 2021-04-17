@@ -59,8 +59,8 @@
   border-radius: 100%;
   -webkit-animation: bubble1 1200ms ease-in-out infinite;
           animation: bubble1 1200ms ease-in-out infinite;
-  -webkit-animation-delay: calc(var(--i) * 350ms);
-          animation-delay: calc(var(--i) * 350ms);
+  -webkit-animation-delay: calc(var(--i) * -350ms);
+          animation-delay: calc(var(--i) * -350ms);
 }
 
 @-webkit-keyframes bubble1 {
