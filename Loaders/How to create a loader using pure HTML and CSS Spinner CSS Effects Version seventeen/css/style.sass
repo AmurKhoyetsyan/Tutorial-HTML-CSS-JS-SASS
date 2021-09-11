@@ -1,0 +1,64 @@
+*
+    padding: 0
+    margin: 0
+    box-sizing: border-box
+
+.parent
+    width: 100%
+    height: 100vh
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+    background-color: #FFAA00
+    .loader
+        width: 100px
+        .loader-title
+            color: #FFFFFF
+            font-size: 16px
+            text-align: center
+            font-weight: 900
+        .loader-content
+            width: 100%
+            height: 35px
+            position: relative
+            .item
+                width: 20px
+                height: 20px
+                background-color: #FFFFFF
+                position: absolute
+                top: 50%
+                left: 0
+                border-radius: 50%
+                &:nth-child(2)
+                    animation: animOne 600ms linear infinite
+                &:nth-child(3)
+                    animation: animTwo 600ms linear infinite
+                &:first-child
+                    animation: animThere 600ms linear infinite
+                &:last-child
+                    animation: animFour 600ms linear infinite
+
+@keyframes animOne
+    0%
+        transform: translate(7px, -50%) scale(1)
+    100%
+        transform: translate(41px, -50%) scale(1.5)
+
+@keyframes animTwo
+    0%
+        transform: translate(41px, -50%) scale(1.5)
+    100%
+        transform: translate(74px, -50%) scale(1)
+
+@keyframes animThere
+    0%
+        transform: translate(7px, -50%) scale(0.5)
+    100%
+        transform: translate(7px, -50%) scale(1)
+
+@keyframes animFour
+    0%
+        transform: translate(74px, -50%) scale(1)
+    100%
+        transform: translate(74px, -50%) scale(0.5)
