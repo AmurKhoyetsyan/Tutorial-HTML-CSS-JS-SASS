@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parent {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFAA00;
+}
+
+.parent .loader {
+  width: 100px;
+}
+
+.parent .loader .loader-title {
+  color: #FFFFFF;
+  font-size: 16px;
+  text-align: center;
+  font-weight: 900;
+}
+
+.parent .loader .loader-content {
+  width: 100%;
+  height: 35px;
+  position: relative;
+}
+
+.parent .loader .loader-content .item {
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+}
+
+.parent .loader .loader-content .item:nth-child(2) {
+  -webkit-animation: animOne 600ms linear infinite;
+          animation: animOne 600ms linear infinite;
+}
+
+.parent .loader .loader-content .item:nth-child(3) {
+  -webkit-animation: animTwo 600ms linear infinite;
+          animation: animTwo 600ms linear infinite;
+}
+
+.parent .loader .loader-content .item:first-child {
+  -webkit-animation: animThere 600ms linear infinite;
+          animation: animThere 600ms linear infinite;
+}
+
+.parent .loader .loader-content .item:last-child {
+  -webkit-animation: animFour 600ms linear infinite;
+          animation: animFour 600ms linear infinite;
+}
+
+@-webkit-keyframes animOne {
+  0% {
+    -webkit-transform: translate(7px, -50%) scale(1);
+            transform: translate(7px, -50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(41px, -50%) scale(1.5);
+            transform: translate(41px, -50%) scale(1.5);
+  }
+}
+
+@keyframes animOne {
+  0% {
+    -webkit-transform: translate(7px, -50%) scale(1);
+            transform: translate(7px, -50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(41px, -50%) scale(1.5);
+            transform: translate(41px, -50%) scale(1.5);
+  }
+}
+
+@-webkit-keyframes animTwo {
+  0% {
+    -webkit-transform: translate(41px, -50%) scale(1.5);
+            transform: translate(41px, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(74px, -50%) scale(1);
+            transform: translate(74px, -50%) scale(1);
+  }
+}
+
+@keyframes animTwo {
+  0% {
+    -webkit-transform: translate(41px, -50%) scale(1.5);
+            transform: translate(41px, -50%) scale(1.5);
+  }
+  100% {
+    -webkit-transform: translate(74px, -50%) scale(1);
+            transform: translate(74px, -50%) scale(1);
+  }
+}
+
+@-webkit-keyframes animThere {
+  0% {
+    -webkit-transform: translate(7px, -50%) scale(0.5);
+            transform: translate(7px, -50%) scale(0.5);
+  }
+  100% {
+    -webkit-transform: translate(7px, -50%) scale(1);
+            transform: translate(7px, -50%) scale(1);
+  }
+}
+
+@keyframes animThere {
+  0% {
+    -webkit-transform: translate(7px, -50%) scale(0.5);
+            transform: translate(7px, -50%) scale(0.5);
+  }
+  100% {
+    -webkit-transform: translate(7px, -50%) scale(1);
+            transform: translate(7px, -50%) scale(1);
+  }
+}
+
+@-webkit-keyframes animFour {
+  0% {
+    -webkit-transform: translate(74px, -50%) scale(1);
+            transform: translate(74px, -50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(74px, -50%) scale(0.5);
+            transform: translate(74px, -50%) scale(0.5);
+  }
+}
+
+@keyframes animFour {
+  0% {
+    -webkit-transform: translate(74px, -50%) scale(1);
+            transform: translate(74px, -50%) scale(1);
+  }
+  100% {
+    -webkit-transform: translate(74px, -50%) scale(0.5);
+            transform: translate(74px, -50%) scale(0.5);
+  }
+}
+/*# sourceMappingURL=style.css.map */
